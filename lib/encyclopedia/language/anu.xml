@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="conlang.css"?>
+
+<screen>
+
+  <container>
+
+    <conlang>
+
+      <word_name>Anu</word_name>
+
+      <word_type>Word Class [ Pseudo-Japonic ]</word_type>
+
+      <word_definition>The pseudo masculine word class for loan words from Japanese.</word_definition>
+
+      <word_context>Words with a masculine word class in loan words from Japanese use anu as the proper classification.</word_context>
+
+    </conlang>
+
+  </container>
+
+</screen>

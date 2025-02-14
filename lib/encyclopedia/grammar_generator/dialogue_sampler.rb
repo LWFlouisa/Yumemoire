@@ -1,0 +1,37 @@
+$player_exist = File.read("player/player_exist.txt").strip.to_i
+
+def grammar
+  def object
+    all_known_classified_persons_places_things = File.readlines("dictionary/generated_nouns.txt")
+    current_object                             = all_known_classified_persons_places_things.sample.sample.strip
+  end
+
+  def subject
+    all_known_subjects = File.readlines("dictionary/generated_subjects.txt")
+    current_subject    = all_known_subject.sample.strip
+  end
+
+  def verb
+    all_known_verb_adverbs = File.readlines("dictionary/generated_verb_adverbs.txt")
+    current_verb_adverbs   = all_known_subject.sample.strip
+  end
+
+  def sample_dialogue
+    object; subject; verb
+
+    current_sample = current_object + " " + current_subject + " " + current_verb_adverbs + "."
+
+
+    if $player_exist == 0
+      if not(current_sample == "")
+        # 
+      else
+        puts ">> The Townsfolk has nothing to say at the moment."
+      end
+    else
+      puts ">> The townsfolk have nothing to say at the moment."
+    end
+  end
+end
+
+grammar.sample_dialogue
