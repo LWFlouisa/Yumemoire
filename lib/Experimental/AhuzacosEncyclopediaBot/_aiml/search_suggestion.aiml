@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<aiml version = "1.0.1" encoding = "UTF-8">
+  <category>
+    <pattern>Can you offer a suggestion for what you can do?</pattern>
+
+    <template>How about?
+      <random>
+        <li> "Can you mix colors?"</li>
+        <li> "Can you reconstruct a face?"</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>Give me another suggestion?</pattern>
+
+    <template>How about?
+      <random>
+        <li> "Can you mix colors?"</li>
+        <li> "Can you reconstruct a face?"</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>Can you mix colors?</pattern>
+    <template>Yes, use the command: I want you to mix these four colors.</template>
+  </category>
+
+  <category>
+    <pattern>Can you reconstruct a face?</pattern>
+    <template>Yes, use the command: I want you to reconstruct the human face.</template>
+  </category>
+
+  <category>
+    <pattern>Can you do autocomplete?</pattern>
+    <template>No, but I can offer a random suggestion in real time.</template>
+  </category>
+<aiml>

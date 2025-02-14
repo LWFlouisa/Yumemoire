@@ -1,0 +1,5 @@
+For user known features: ["hair\n", "eyes\n", "nose\n", "mouth\n", "chin\n"]
+For scrambled features: ["chin\n", "hair\n", "nose\n", "eyes\n", "mouth\n"]
+
+Something is not right here, resorting features...
+Here are the resorted features: hair, eyes, nose, mouth, chin

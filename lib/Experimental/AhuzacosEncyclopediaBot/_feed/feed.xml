@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?xml-stylesheet type='text/css' href='Stylesheet/rss.css' ?>
+<rss version='2.0'>
+
+<channel>
+  <title>Rubymixer Feed</title>
+  <link>http://localhost:8000/_routines/_feed/feed.xml</link>
+  <description>Subscription feed for Rubymixer.</description>
+
+  
+  <item>
+    <title>2024 07 03</title>
+    <link>http://localhost:8000/documents/2024_07_03.txt</link>
+    <description><![CDATA[<h2>Ruby Mixer</h2>
+
+<p>For mixing #293430, #a0977b, #b3a8b9, and #720504:</p>
+
+<p>The first hex value #293430 mixed with second hex value #a0977b makes: #827e68.</p>
+
+<p>The third hex value #b3a8b9 mixed with fourth hex value #720504 makes: #822e31.</p>
+
+<p>The first aggregate hex value #827e68 mixed with the second aggregate value #822e31 produces: #82423f.</p>]]></description>
+  </item>
+      
+  
+  <item>
+    <title>2024 07 03</title>
+    <link>http://localhost:8000/documents/2024_07_03.txt</link>
+    <description><![CDATA[<h2>Ruby Mixer</h2>
+
+<p>For mixing #97d700, #8a391b, #897322, and #373a36:</p>
+
+<p>The first hex value #97d700 mixed with second hex value #8a391b makes: #8d6114.</p>
+
+<p>The third hex value #897322 mixed with fourth hex value #373a36 makes: #4c4831.</p>
+
+<p>The first aggregate hex value #8d6114 mixed with the second aggregate value #4c4831 produces: #5c4e2a.</p>]]></description>
+  </item>
+      
+
+</channel>
+
+</rss>

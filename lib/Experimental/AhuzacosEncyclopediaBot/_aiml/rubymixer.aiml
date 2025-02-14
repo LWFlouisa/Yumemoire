@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<aiml version = "1.0.1" encoding = "UTF-8">
+  <category>
+    <pattern>I want you to mix these four colors.</pattern>
+    <template>
+      Got it, will have the results of your color mix promptly.
+      <system>./routine.sh</system>
+    </template>
+  </category>
+<aiml>

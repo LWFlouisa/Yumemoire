@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<aiml version = "1.0.1" encoding = "UTF-8">
+  <category>
+    <pattern>Tell me about the history of the Ahuzacos.</pattern>
+    <template>
+      Lets see what the historical references tell us.
+
+      <system>cd _encyclopedia; ruby quizlet.rb</system>
+    </template>
+  </category>
+<aiml>

@@ -1,0 +1,5 @@
+## Ruby Mixer
+<p>For mixing #293430, #a0977b, #b3a8b9, and #720504:</p>
+<p>The first hex value #293430 mixed with second hex value #a0977b makes: #827e68.</p>
+<p>The third hex value #b3a8b9 mixed with fourth hex value #720504 makes: #822e31.</p>
+<p>The first aggregate hex value #827e68 mixed with the second aggregate value #822e31 produces: #82423f.</p>
