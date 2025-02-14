@@ -1,0 +1,157 @@
+<necrosublimophilia>
+  <audio>
+
+    <songs>
+      <greensleeves></greensleeves>
+      <growlsinthemidnight></growlsinthemidnight>
+      <otherworldlyursinepiros></otherworldlyursinepuros>
+    </songs>
+  </audio>
+
+  <data>
+  </data>
+
+  <fonts>
+    <angelscript></angelscript>
+    <fraponiccomplete></fraponiccomplete>
+  </fonts>
+
+  <img>
+    <parallax>
+    </parallax>
+  </img>
+
+  <lib>
+    <aiml>
+    </aiml>
+
+    <beastiary>
+      <oceanic_monsters>
+        
+        <cochonauhomard>
+          <name>Cochon Au Homard</name>
+          <description>French version of Lobsterpig.</description>
+        </cochonauhomard>
+
+        <robusuta_buta>
+          <name>Robusuta Buta</name>
+          <description>Japanese version of Lobsterpig.</description>
+        </robusuta_buta>
+
+        <cochonbuta>
+          <name>Cochonbuta</name>
+          <description>La Cousinees De Le Aragnee Cochon, combines boars and lobsters.</description>
+        </cochonbuta>
+
+        <robusuta_au_homard>
+          <name>Robusuta Au Homard</name>
+          <description>Le Cousines De Le Aragnee Cochon, landlocked version of Cochonbuta.</description>
+        </robusuta_au_homard>
+      </oceanic_monsters>
+
+      <shipwreck_monsters>
+         <ursinehomme>
+           <name>Ursinehomme</name>
+           <description>Male version of wearbears.</description>
+         </ursinehomme>
+
+         <ursinefemme>
+           <name>ursinefemme</name>
+           <description>Female version of wearbears.</description>
+         </ursinefemme>
+      </shipwreck_monsters>
+
+      <undead_monsters>
+        <kumabatto_de_les_ghoules>
+          <name>Kumabatto</name>
+          <description>The king of bear-bats.</description>
+        </kumabatto_de_les_ghoules>
+
+        <ursinepiros>
+          <name>Ursinepiros</name>
+          <description>The scientific name for bear-bats.</description>
+        </ursinepuros>
+      </undead_monsters>
+
+      <four_dimensional_dream>
+        <quantumcrusified>
+          <name>The Quantumcrusified</name>
+          <description>Undead creatures whom were once men, that come back as victims of quantum crusafiction.</description>
+        </quantumcrusified>
+      </four_dimensional_dream>
+    </beastiary>
+
+    <corpus>
+      <predictive>
+      </predictive>
+    </corpus>
+
+    <encyclopedia>
+    </encyclopedia>
+
+    <language>
+    </language>
+
+    <translate>
+    </translate>
+
+    <experimental>
+    </experimental>
+
+    <laboratory>
+      <automixREAL>
+      </automixREAL>
+
+      <automixSYNTH>
+      </autmixSYNTH>
+
+      <colortheory>
+      </colortheory>
+    </laboratory>
+
+    <lifeform>
+      <ainput>
+      </ainput>
+
+      <enemies>
+      </enemies>
+
+      <lifeform>
+      </lifeform>
+
+      <pet_food>
+      </pet_food>
+
+      <upgrades>
+        <normal_upgrades></normalupgrades>
+        <demonic_upgrades></demonic_upgrades>
+      </upgrades>
+
+      <pet_grooming>
+        <normal_spider></normal_spider>
+        <demon_spider></demon_spider>
+      </pet_grooming>
+
+      <pets>ruby pets.rb</pets>
+    </lifeform>
+
+    <personaldemonmetric>
+    </personaldemonmetric>
+
+    <player_stats>
+    </player_stats>
+
+    <revamped_enemy>
+    </revamped_enemy>
+
+    <scenes>
+    </scenes> 
+
+    <visual>
+      <city_visualizer></city_visualizer>
+
+      <addons>
+      </addons>
+    </visual>   
+  </lib>
+</necrosublimophilia>
