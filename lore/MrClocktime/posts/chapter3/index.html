@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+  <title>Mr. Clocktime Stories</title>
+  <meta name="robots" content="noindex, nofollow, nosnippet, noarchive, noimageindex">
+  <style>
+body {
+  background-color: #131212;
+
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAADpklEQVRoQ+VabXKrMAyE3qAQcoT2/sdqvo5AnhyGAsaWVrJcMvP40zIYx6uV1pJw23fdsznoOp1Oze12a37/dnT/WN3Hzx3u2xjwSOA//sAAO7AOYF7GE4y2AxxjrWmAaqAZ47V9Ty59gFMvYDty68fi1l5MZ+YRGa7JeJ7hekZQA14M0NK/edeYQyEXEnuwNUDeyXP6jTAS4J5WnVk4jykiXzX49W5Nhq8kYEPCrQsYLpNyXLAGYug6GedOKtxHW5ky5usBBuQdAX0hps5KUNy81QBLeBGwU1LiG9vVACMOD4HOuvGFjHHeZmqAJzgA1osVL1j2WEXc3wEwwmV6DMTwOteWGBzIWFcuFx+aPGAbcTD6GGxHYB4acDQ+y+iFQJ9Xar4KixVgb4SSbHH7cLz1rLYmySjC1nWYS5e5s02wguoDgL2ZX7xeBdoh6Qi/BwCGw1I1UALb0+Lukvve9EwnAGdiz4PoaA4JNPcc2YJS778twyXG2LSNoq3MD3DGA57NSLXYR6JtNAqZ0r60O50Uap0JBz/AqgjWbEll1VHsKc6AF5pDhR3uuKuoWxknF6LATRkYCxhZ9ARL3xTzEyRdNeXMsK4JohUmS/o5CdgS+xnAclqoDNndcC1Yr/F1GUZjWKqCoud2pk2Zlg/7Xoxp5+G7lqV+W4lhLcj1eEeX1qn1vAgsZ2aKerHo3+7j7ffX13ObigVF+zH1i7iULsVKZQdKTv9iuMRFtCDn8UeADb+ZYNg3leOMeQRogOFUEl9uFBvY8tL1zxlei5QNdNlb7SfFsOenDDSmy5bNvc3nCTjD1vMX9N6Fzm0sRu2ovfp43ecun9QmPTsQw3UOmdRiWKrwcIaT+a5O0OJvtrVAcx7yJgzrsrQSQ/EMa7oKcYoHxLxp4YUB7sOwMp8NyUjqSmIh8kcKTK+zY1mGUzWntRe8bFXbxjnMsKPHpxkOjIXWiHSewsAsnkujvhtZQzBOoUoDWxZjlDXD++1kDdiPYmMM851CpMaF3Xke6ITZn2FOnSPVV4N2eMHI8FHVkh3xHCAyw8B+ihYM8Tj78u3+/d8w/CsF+55WubuijNsZZt7M7mbTg2MYpjBxS52UVpNjWPlVIKSNaEamXKvL8ATDupIPdV8/wSrDXYVhzAgDrVz/mRWvOt644zHSsYjUoYgyLjOAUZWWv9jpz1/UACTNeYxKMw08acH659skZYphTWfDoNq5mNYvvvyNN2YYrYd5I8Sz/APD7sYIdqK4QAAAAABJRU5ErkJggg==);
+}
+    
+h1, h2, h3, h4, h5, h6, p, pre {
+  color: #F4F8FB;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+a {
+  color: #E6EAED;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+div#leanpub-toc {
+  width: 300px;
+  float: left;
+}
+
+div#leanpub-main {
+  width: 700px;
+  float: left;
+}
+
+// Book ToC
+// ----------------------
+
+.toc {
+  list-style: none;
+}
+.toc li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.toc.has-parts li {
+  margin-left: 10px;
+}
+
+.toc.has-parts li.part {
+  margin-left: 0px;
+}
+.toc li.part {
+  font-size: 1.2em;
+}
+.toc li.chapter {
+  padding-left: 0px;
+}
+.toc li.section {
+  padding-left: 10px;
+  font-size: 0.8em;
+}
+.toc li.sub-section {
+  padding-left: 20px;
+  font-size: 0.7em;
+}
+.toc li.sub-sub-section {
+  padding-left: 30px;
+  font-size: 0.6em;
+}
+.toc li.sub-sub-sub-section {
+  padding-left: 40px;
+  font-size: 0.5em;
+}
+
+.toc .section-number {
+  font-weight: bold;
+}
+
+/* headings */
+
+h1, h2, h3, h4, h5 { text-align: center; }
+h1#toc { text-align: center};
+
+
+
+h1, h2, h3, h4, h5, h6, h7 {
+   font-family: sans-serif;
+}
+
+/* Parts */
+body.kramdown h1, body.markua h1.part {
+   font-size: 4em;
+   line-height: .8em;
+   font-variant: small-caps;
+   margin-top: 20%;
+   text-align: center;
+   padding: 0;
+   font-weight: normal;
+}
+
+/* Chapters */
+h1#toc, body.kramdown h2, body.markua h1.chapter {
+   font-size: 1.5em;
+   margin-top: 10%;
+   margin-bottom: 1em;
+}
+
+/* Sections */
+body.kramdown h3, body.markua h2.section {
+   font-size: 1.17em;
+   margin-top: 1em;
+   margin-bottom: 0.25em;
+}
+
+body.kramdown h4, body.markua h3.subsection { margin-top: 1em;
+   font-size: 1.12em;
+   margin-bottom: 0.25em;
+}
+
+body.kramdown h5, body.markua h4.subsubsection { margin-top: 1em;
+   font-size: 0.83em;
+   margin-bottom: 0.25em;
+}
+
+body.kramdown h6, body.markua h5.subsubsubsection {
+   font-size: 0.75em;
+   margin: 0;
+}
+/* general text */
+
+p {
+  text-indent: 0em;
+  margin-top: 0.5em;
+}
+
+.hanging-indent p {
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+blockquote { margin-left: 2em; }
+
+span.lineno, code.lineno {
+  color: gray;
+  font-size: 80%;
+}
+
+.centered p {
+  text-align: center;
+}
+
+/* asides, warnings, etc */
+
+div.sidebarish h1, div.sidebarish h2, div.sidebarish h3, div.sidebarish h4 {
+  margin-bottom: 0.5em;
+  vertical-align: center;
+}
+
+div.sidebarish   {
+  margin: 50px 0px 50px 10px;
+  padding-left: 60px;
+}
+
+div.sidebarish img.sidebar-image {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: center;
+}
+
+div.page-break {
+  page-break-after: always;
+}
+
+/* Endnotes page */
+
+div.footnotes h1, div.footnotes h2 {
+  text-align: left;
+}
+
+div.footnotes h1 {
+  font-size: 1.5em;
+}
+
+div.footnotes h2 {
+  font-size: 1.17em;
+}
+
+/* force some space before and after code blocks */
+pre {
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   font-family: monospace;
+}
+
+body {
+  direction: ltr;
+}
+
+/* image equations */
+
+img.inline-equation {
+   height: 1.25em;
+}
+
+img.block-equation {
+  margin-top: 0.5em;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  text-align: center;
+  display: block;
+}
+
+
+/* styles for inserted (uil) and deleted (udl) lines */
+.udl {
+  text-decoration: line-through;
+}
+
+.uil {
+  font-weight: 900;
+}
+
+/* NOTE: I replaced this line:
+ * .err { border: 1px solid #FF0000 } /* Error */
+ * with this:
+ * .err { color: #FF0000 } /* Error */
+ * to get rid of the ugly red boxes
+ */
+
+/* ============================================================================== */
+/* everything below this line is generated by rake book_generator:pygments_styles */
+.hll { background-color: #ffffcc }
+.c { color: #408080; font-style: italic } /* Comment */
+.err { color: #FF0000 } /* Error */
+.k { color: #008000; font-weight: bold } /* Keyword */
+.o { color: #666666 } /* Operator */
+.cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.cp { color: #BC7A00 } /* Comment.Preproc */
+.c1 { color: #408080; font-style: italic } /* Comment.Single */
+.cs { color: #408080; font-style: italic } /* Comment.Special */
+.gd { color: #A00000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #FF0000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #00A000 } /* Generic.Inserted */
+.go { color: #808080 } /* Generic.Output */
+.gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #0040D0 } /* Generic.Traceback */
+.kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #008000 } /* Keyword.Pseudo */
+.kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #B00040 } /* Keyword.Type */
+.m { color: #666666 } /* Literal.Number */
+.s { color: #BA2121 } /* Literal.String */
+.na { color: #7D9029 } /* Name.Attribute */
+.nb { color: #008000 } /* Name.Builtin */
+.nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.no { color: #880000 } /* Name.Constant */
+.nd { color: #AA22FF } /* Name.Decorator */
+.ni { color: #999999; font-weight: bold } /* Name.Entity */
+.ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.nf { color: #0000FF } /* Name.Function */
+.nl { color: #A0A000 } /* Name.Label */
+.nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.nt { color: #008000; font-weight: bold } /* Name.Tag */
+.nv { color: #19177C } /* Name.Variable */
+.ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #666666 } /* Literal.Number.Float */
+.mh { color: #666666 } /* Literal.Number.Hex */
+.mi { color: #666666 } /* Literal.Number.Integer */
+.mo { color: #666666 } /* Literal.Number.Oct */
+.sb { color: #BA2121 } /* Literal.String.Backtick */
+.sc { color: #BA2121 } /* Literal.String.Char */
+.sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.s2 { color: #BA2121 } /* Literal.String.Double */
+.se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.sh { color: #BA2121 } /* Literal.String.Heredoc */
+.si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.sx { color: #008000 } /* Literal.String.Other */
+.sr { color: #BB6688 } /* Literal.String.Regex */
+.s1 { color: #BA2121 } /* Literal.String.Single */
+.ss { color: #19177C } /* Literal.String.Symbol */
+.bp { color: #008000 } /* Name.Builtin.Pseudo */
+.vc { color: #19177C } /* Name.Variable.Class */
+.vg { color: #19177C } /* Name.Variable.Global */
+.vi { color: #19177C } /* Name.Variable.Instance */
+.il { color: #666666 } /* Literal.Number.Integer.Long */
+  </style>
+  <!--<link rel="stylesheet" href="webnovel.css">-->
+  <title>Mr. Clocktime And Vella</title>
+  <!--<title>Chapter 3 Closing Of The Night's Sonata</title>-->
+  <meta name="robots" content="noindex, nofollow, nosnippet, noarchive, noimageindex">
+  <body>
+    <main>
+      <div id="leanpub-toc">
+        <h2>Yumemoire Music</h2>
+        <ol class="toc">
+        <ul class='toc no-parts'>
+          <li>
+            <a href='https://lwflouisa.neocities.org/MrClocktime/posts//chapter1'>Chapter 1</a>
+          </li>
+          <li>
+            <a href='https://lwflouisa.neocities.org/MrClocktime/posts//chapter2'>Chapter 2</a>
+          </li>
+          <li>
+            <a href='https://lwflouisa.neocities.org/MrClocktime/posts//chapter3'>Chapter 3</a>
+          </li>
+          <li>
+            <a href='https://lwflouisa.neocities.org/MrClocktime/posts//chapter4'>Chapter 4</a>
+          </li>
+          <li>
+            <a href='https://lwflouisa.neocities.org/MrClocktime/posts//chapter5'>Chapter 5</a>
+          </li>
+        </ul>
+      </ol>
+      </div>
+
+      <div id="leanpub-main" class="kramdown">
+      <h2>Chapter 4</h2>
+<p>She rode on her hover cycle down the broken down bridge to her apartment flat. In her backpack were various CDs with various Linux Distributions. The speed limit was only fifty five, and she went ninety. Zip, zip, zip down the roadway she went past various roads of corn fields outside of the larger city complex just down a few blocks. The merging of centuries has had lasting effects. The untainted forest of unknown creatures of the night made their homes in the same world as the world of prosthetic arm and eye enhancements and virtual reality. They would occasionally visit her neighbors, who would always be complaining about dark things in the night. She hung up her wooden clogs on the door, and went home to the fireplace and sat on the couch waiting for the evening's dinner.</p>
+<p>When she did not drive to school, she would ride various carts along the dirt roads when her little sister, and she would always had to reminds them to dust and wipe their clogs before going inside. She hopped off with them from the horse cart, and then tip her little black bowed straw hat and stare at the edges of the sunlight in the sky. It was a local field trip organized by their pastor, who was not wild about the current advances in technology. Indeed, ordinarily these technologies would only occur after the next one hundred years. Vella's cousin Gella took out her phone, and text her pen pals that she had arrived.</p>
+<p>Eventually the group was split up from the pastor. And thus they were lost within the corn maze. Until eventually Mr. Clocktime appear in the corn field, and offered to lead them in the direction of the pastor. He tap his cane gently into the mud, and finally they popped back to where the pastor was. 'Girls, girls! Where have you been? Now I have wrinkles on my chin.' said the pastor, and thus this ended their field this section of the field trip.</p>
+<p>Mr. Clocktime was bored with mostly spending time in the city. After all the local fare of seafood was only so much to bare. The occasionally gourmet pizza he would buy from various restaurants were always nice, yet even these would gradually become old for him. Thus it was the following night that he would see Vella again, and thus would be another adventure, though he had to resist the fact that it was in fact training for something else later that would determine her own ability to survive the collapse of the universe. After all, all it would take would be a wish from Vella that can restore humanity's place on the planet, and thus restore Mr. Clocktime's ability to be entertained.</p>
+<p>His humor was rather profane, he had a shit load of giggles from watching Volcano's explode, and watching ancient buildings from begone eras fall down and implode. Why watch explosion on film, when you can be right there and watch the events unfold at any time of history you want. It was a cold night, and he regretted the thinness of his leather trench coat. And he felt that the color was simply to dark for the occasion, though his black sunglasses and top hat would be just fine. But so much black he wore, and the night was never so dark. In fact the night time was just dark enough to hallucinate vile things in the night.</p>
+<p>That evening he visited Vella in a dream. In this dream he gave he one wish to fulfill, for he could only only cause mischief with an ill informed wish. But this was some deeper attachment to her. For she was different from the other adventurers that had he met before in his eons of life. Vella looked just like Nadine, who had defeated Dantino twenty years before. Nadine was of the old guard in a reality that only we may know. She was the cause of the birth of the duality of centuries, and thus also born him. Despite his nature for mischief, he was always a kind of secret adulterous affair from Ellen and Millie.</p>
+<p>Vella made he wish against all other wishes.</p>
+<p>And thus all the adults were gone, except him.</p>
+<p>Vella arrived at school, and noted that while all her friends were there at the door, there were no adults to be found. This would spin their sense all around, and make them hop gigs if they could hope gigs. Tap dancing on one of their friends was big enough to carry an entire dog pounds. They would roll along the playground, and grind with their Tennis shoes on the monkey bar railings, and then hop back on the boy and continue rolling up the mountain. But Vella herself had grown concerned by the absence of their parents, despite the others good time. Thus she hop off the boy, and ran to Mr. Clocktime carefully avoiding being ran over, because by comparison she was much shorter than all the rest. At her friends behest, &quot;I don't wish to be away from my mom, I want all the adults to be home again.&quot;</p>
+<p>&quot;Indeed Vella, a good daughter you are.&quot; said Mr. Clocktime. And with a snap of his cane on to the parking lot road, sent time backwards. Until eventually Vella was back in bed, and all the adults were back in the world again.</p>
+<p>Then he hopped out of time.</p>
+<p>Mr. Clocktime Entertains</p>
+<p>He tipped his hat forward, to step out of the rain. Then tapped his cane on the door, in order to close it. Mr. Clocktime had come to visit Vella after she got off from school. He had carefully let Nadine know in advance that he would be arriving. He saw Vella's two little wooden shoes by the door, letting him know that she was home. – Vella, it's your father.</p>
+<p>– I'm doing homework!</p>
+<p>– Is that the real reason?</p>
+<p>– Why brings you here? I thought mom didn't want to see you anymore?</p>
+<p>Mr. Clocktime had been scant over the last few months, as she didn't want either Millie or Dantino knowing that she had been impregnated by the the god himself. He came as if from a dream, from the fourth dimension, and could cross any points in time he wanted, viewing each time line as if it were a face on a hypercube. With the tip of his cane, he fly those that upset him into the fourth dimension, thereby crushing them into an infinite singularity. But for tonight, he was here to see Vella. – Every weekend I get to entertain you, unlike you mother. And why should it matter? You hardly talk to her yourself?</p>
+<p>Vella had always been taught to distrust men that came in the shadows. For they always come with bad omens. – Is it my top hat? I suppose I could take it off.</p>
+<p>Part of Father Clocktime freaked her out, as it reminded her of the fragility of her own existence. That could pop out of time at any point, and only some part remains that her mother Nadine would have to bury. Clocktime was that god that was just about Hemato, and in this respect that made him a threat to her power. And yet for the most they never had tried to meet until recently. In a sense, he had existed before the creation of the world by the Decentralized Super-Sentient Meta-Human Hemato herself, so often she had avoided encountering him for the most part. He was that embedded firmware bug that had always existed.</p>
+<p>There were parts of him that even Hemato-Tomato could not understand, some bit of persistent data that had always been around. His personality had been fragmentary, yet had always been that nagging sensational that allowed Hemato to hold onto that last bit of humanity, even as he personality began to fragment. That bits of intelligence that kept he holding on.</p>
+<p>– I'll be taking you to school.</p>
+<p>– Why do I have to go to school?</p>
+<p>– Nadine's orders.</p>
+
+      </div>
+    </main>
+  </body>
+</html>

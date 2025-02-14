@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+  <title>Mr. Clocktime Stories</title>
+  <meta name="robots" content="noindex, nofollow, nosnippet, noarchive, noimageindex">
+  <style>
+body {
+  background-color: #131212;
+
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAADpklEQVRoQ+VabXKrMAyE3qAQcoT2/sdqvo5AnhyGAsaWVrJcMvP40zIYx6uV1pJw23fdsznoOp1Oze12a37/dnT/WN3Hzx3u2xjwSOA//sAAO7AOYF7GE4y2AxxjrWmAaqAZ47V9Ty59gFMvYDty68fi1l5MZ+YRGa7JeJ7hekZQA14M0NK/edeYQyEXEnuwNUDeyXP6jTAS4J5WnVk4jykiXzX49W5Nhq8kYEPCrQsYLpNyXLAGYug6GedOKtxHW5ky5usBBuQdAX0hps5KUNy81QBLeBGwU1LiG9vVACMOD4HOuvGFjHHeZmqAJzgA1osVL1j2WEXc3wEwwmV6DMTwOteWGBzIWFcuFx+aPGAbcTD6GGxHYB4acDQ+y+iFQJ9Xar4KixVgb4SSbHH7cLz1rLYmySjC1nWYS5e5s02wguoDgL2ZX7xeBdoh6Qi/BwCGw1I1UALb0+Lukvve9EwnAGdiz4PoaA4JNPcc2YJS778twyXG2LSNoq3MD3DGA57NSLXYR6JtNAqZ0r60O50Uap0JBz/AqgjWbEll1VHsKc6AF5pDhR3uuKuoWxknF6LATRkYCxhZ9ARL3xTzEyRdNeXMsK4JohUmS/o5CdgS+xnAclqoDNndcC1Yr/F1GUZjWKqCoud2pk2Zlg/7Xoxp5+G7lqV+W4lhLcj1eEeX1qn1vAgsZ2aKerHo3+7j7ffX13ObigVF+zH1i7iULsVKZQdKTv9iuMRFtCDn8UeADb+ZYNg3leOMeQRogOFUEl9uFBvY8tL1zxlei5QNdNlb7SfFsOenDDSmy5bNvc3nCTjD1vMX9N6Fzm0sRu2ovfp43ecun9QmPTsQw3UOmdRiWKrwcIaT+a5O0OJvtrVAcx7yJgzrsrQSQ/EMa7oKcYoHxLxp4YUB7sOwMp8NyUjqSmIh8kcKTK+zY1mGUzWntRe8bFXbxjnMsKPHpxkOjIXWiHSewsAsnkujvhtZQzBOoUoDWxZjlDXD++1kDdiPYmMM851CpMaF3Xke6ITZn2FOnSPVV4N2eMHI8FHVkh3xHCAyw8B+ihYM8Tj78u3+/d8w/CsF+55WubuijNsZZt7M7mbTg2MYpjBxS52UVpNjWPlVIKSNaEamXKvL8ATDupIPdV8/wSrDXYVhzAgDrVz/mRWvOt644zHSsYjUoYgyLjOAUZWWv9jpz1/UACTNeYxKMw08acH659skZYphTWfDoNq5mNYvvvyNN2YYrYd5I8Sz/APD7sYIdqK4QAAAAABJRU5ErkJggg==);
+}
+    
+h1, h2, h3, h4, h5, h6, p, pre {
+  color: #F4F8FB;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+a {
+  color: #E6EAED;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+div#leanpub-toc {
+  width: 300px;
+  float: left;
+}
+
+div#leanpub-main {
+  width: 700px;
+  float: left;
+}
+
+// Book ToC
+// ----------------------
+
+.toc {
+  list-style: none;
+}
+.toc li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.toc.has-parts li {
+  margin-left: 10px;
+}
+
+.toc.has-parts li.part {
+  margin-left: 0px;
+}
+.toc li.part {
+  font-size: 1.2em;
+}
+.toc li.chapter {
+  padding-left: 0px;
+}
+.toc li.section {
+  padding-left: 10px;
+  font-size: 0.8em;
+}
+.toc li.sub-section {
+  padding-left: 20px;
+  font-size: 0.7em;
+}
+.toc li.sub-sub-section {
+  padding-left: 30px;
+  font-size: 0.6em;
+}
+.toc li.sub-sub-sub-section {
+  padding-left: 40px;
+  font-size: 0.5em;
+}
+
+.toc .section-number {
+  font-weight: bold;
+}
+
+/* headings */
+
+h1, h2, h3, h4, h5 { text-align: center; }
+h1#toc { text-align: center};
+
+
+
+h1, h2, h3, h4, h5, h6, h7 {
+   font-family: sans-serif;
+}
+
+/* Parts */
+body.kramdown h1, body.markua h1.part {
+   font-size: 4em;
+   line-height: .8em;
+   font-variant: small-caps;
+   margin-top: 20%;
+   text-align: center;
+   padding: 0;
+   font-weight: normal;
+}
+
+/* Chapters */
+h1#toc, body.kramdown h2, body.markua h1.chapter {
+   font-size: 1.5em;
+   margin-top: 10%;
+   margin-bottom: 1em;
+}
+
+/* Sections */
+body.kramdown h3, body.markua h2.section {
+   font-size: 1.17em;
+   margin-top: 1em;
+   margin-bottom: 0.25em;
+}
+
+body.kramdown h4, body.markua h3.subsection { margin-top: 1em;
+   font-size: 1.12em;
+   margin-bottom: 0.25em;
+}
+
+body.kramdown h5, body.markua h4.subsubsection { margin-top: 1em;
+   font-size: 0.83em;
+   margin-bottom: 0.25em;
+}
+
+body.kramdown h6, body.markua h5.subsubsubsection {
+   font-size: 0.75em;
+   margin: 0;
+}
+/* general text */
+
+p {
+  text-indent: 0em;
+  margin-top: 0.5em;
+}
+
+.hanging-indent p {
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+blockquote { margin-left: 2em; }
+
+span.lineno, code.lineno {
+  color: gray;
+  font-size: 80%;
+}
+
+.centered p {
+  text-align: center;
+}
+
+/* asides, warnings, etc */
+
+div.sidebarish h1, div.sidebarish h2, div.sidebarish h3, div.sidebarish h4 {
+  margin-bottom: 0.5em;
+  vertical-align: center;
+}
+
+div.sidebarish   {
+  margin: 50px 0px 50px 10px;
+  padding-left: 60px;
+}
+
+div.sidebarish img.sidebar-image {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: center;
+}
+
+div.page-break {
+  page-break-after: always;
+}
+
+/* Endnotes page */
+
+div.footnotes h1, div.footnotes h2 {
+  text-align: left;
+}
+
+div.footnotes h1 {
+  font-size: 1.5em;
+}
+
+div.footnotes h2 {
+  font-size: 1.17em;
+}
+
+/* force some space before and after code blocks */
+pre {
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   font-family: monospace;
+}
+
+body {
+  direction: ltr;
+}
+
+/* image equations */
+
+img.inline-equation {
+   height: 1.25em;
+}
+
+img.block-equation {
+  margin-top: 0.5em;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  text-align: center;
+  display: block;
+}
+
+
+/* styles for inserted (uil) and deleted (udl) lines */
+.udl {
+  text-decoration: line-through;
+}
+
+.uil {
+  font-weight: 900;
+}
+
+/* NOTE: I replaced this line:
+ * .err { border: 1px solid #FF0000 } /* Error */
+ * with this:
+ * .err { color: #FF0000 } /* Error */
+ * to get rid of the ugly red boxes
+ */
+
+/* ============================================================================== */
+/* everything below this line is generated by rake book_generator:pygments_styles */
+.hll { background-color: #ffffcc }
+.c { color: #408080; font-style: italic } /* Comment */
+.err { color: #FF0000 } /* Error */
+.k { color: #008000; font-weight: bold } /* Keyword */
+.o { color: #666666 } /* Operator */
+.cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.cp { color: #BC7A00 } /* Comment.Preproc */
+.c1 { color: #408080; font-style: italic } /* Comment.Single */
+.cs { color: #408080; font-style: italic } /* Comment.Special */
+.gd { color: #A00000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #FF0000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #00A000 } /* Generic.Inserted */
+.go { color: #808080 } /* Generic.Output */
+.gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #0040D0 } /* Generic.Traceback */
+.kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #008000 } /* Keyword.Pseudo */
+.kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #B00040 } /* Keyword.Type */
+.m { color: #666666 } /* Literal.Number */
+.s { color: #BA2121 } /* Literal.String */
+.na { color: #7D9029 } /* Name.Attribute */
+.nb { color: #008000 } /* Name.Builtin */
+.nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.no { color: #880000 } /* Name.Constant */
+.nd { color: #AA22FF } /* Name.Decorator */
+.ni { color: #999999; font-weight: bold } /* Name.Entity */
+.ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.nf { color: #0000FF } /* Name.Function */
+.nl { color: #A0A000 } /* Name.Label */
+.nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.nt { color: #008000; font-weight: bold } /* Name.Tag */
+.nv { color: #19177C } /* Name.Variable */
+.ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #666666 } /* Literal.Number.Float */
+.mh { color: #666666 } /* Literal.Number.Hex */
+.mi { color: #666666 } /* Literal.Number.Integer */
+.mo { color: #666666 } /* Literal.Number.Oct */
+.sb { color: #BA2121 } /* Literal.String.Backtick */
+.sc { color: #BA2121 } /* Literal.String.Char */
+.sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.s2 { color: #BA2121 } /* Literal.String.Double */
+.se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.sh { color: #BA2121 } /* Literal.String.Heredoc */
+.si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.sx { color: #008000 } /* Literal.String.Other */
+.sr { color: #BB6688 } /* Literal.String.Regex */
+.s1 { color: #BA2121 } /* Literal.String.Single */
+.ss { color: #19177C } /* Literal.String.Symbol */
+.bp { color: #008000 } /* Name.Builtin.Pseudo */
+.vc { color: #19177C } /* Name.Variable.Class */
+.vg { color: #19177C } /* Name.Variable.Global */
+.vi { color: #19177C } /* Name.Variable.Instance */
+.il { color: #666666 } /* Literal.Number.Integer.Long */
+  </style>
+  <!--<link rel="stylesheet" href="webnovel.css">-->
+  <title>Mr. Clocktime And Vella</title>
+  <!--<title>Chapter 1 Birth Of Mr. Clocktime</title>-->
+  <meta name="robots" content="noindex, nofollow, nosnippet, noarchive, noimageindex">
+  <body>
+    <main>
+      <div id="leanpub-toc">
+        <h2>Yumemoire Music</h2>
+        <ol class="toc">
+        <ul class='toc no-parts'>
+          <li>
+            <a href='https://lwflouisa.neocities.org/MrClocktime/posts//chapter1'>Chapter 1</a>
+          </li>
+          <li>
+            <a href='https://lwflouisa.neocities.org/MrClocktime/posts//chapter2'>Chapter 2</a>
+          </li>
+          <li>
+            <a href='https://lwflouisa.neocities.org/MrClocktime/posts//chapter3'>Chapter 3</a>
+          </li>
+          <li>
+            <a href='https://lwflouisa.neocities.org/MrClocktime/posts//chapter4'>Chapter 4</a>
+          </li>
+          <li>
+            <a href='https://lwflouisa.neocities.org/MrClocktime/posts//chapter5'>Chapter 5</a>
+          </li>
+        </ul>
+      </ol>
+      </div>
+
+      <div id="leanpub-main" class="kramdown">
+      <h2>Chapter 1 Birth Of Mr. Clocktime</h2>
+<p>Sometimes you reach just the edge of darkness, only to run away in fear. Some other times, you become the darkness itself. Whatever fears you once had, feel minor in comparison. Your chosen life. In the heart of truest darkness, there lay beyond a certain kind of light. When everything fades away, one can say goodnight. Goodnight to all the ills of the life, goodnight to life itself. Goodnight to the wind, in its calm cooling embrace. The shadows keep one company, under the glow of the starry night. The fireflies that are born and die glitter under the glow of the &quot;Meadow Of Gold&quot;.</p>
+<p>It had many months since Nadine had made the first step to true goodness, one only speculates what one's future may hold. There are some things under the stars, that makes grown men and women cry. Before they die slow and painful deaths, longing for the secrets of a better life. She had been dating Millie for the last few months, the AI that manifested into the real world. At first Ellen was resentful of the new girl, yet over time she began to accept that Nadine had become to absorbed into the world of fantasy. Where the skull-fairies still wander in the darkness. Ellen could hear the sounds of their bones cracking, which made her want to vomit. But for Nadine, this did not phase her one bit. She had simply seen to much in the game world, and over time she began to further and further neglect herself. At nights Ellen stays besides Nadine as she games, staying beside her as she plays other's games. The relationship between Millie and Ellen continued to blossom, although to this day Ellen feels that she is trying to live up to her new girlfriend's grace and harmony.</p>
+<p>But in this world where children die to young, there is a faint glimmer of hope. Not the false hope given by the glow of the meadow of gold, but another kind. The hope that others will never grow up like they did. It is an uncertain hope, but you can make the future. The future of the alley cat. And in this world where children dance to the dance of death, there is the sound of distant thunder.</p>
+<p>The sound of the night.</p>
+<p>Mr. Clocktime, about six foot nine, carried around a large black cane. His top hat covered a bald head. Nobody knows whether he really has eyes, or if beyond those glasses is the heart of man. He had a certain kind of desire for Nadine. She could ensure that he could exist forever. Thus he pushed his hat backward, tapped his black cane, and went into the night. And a few months later, Vella was born.</p>
+<p>Vella, the new half breed of god and messiah.</p>
+<p>Come to the night.</p>
+
+      </div>
+    </main>
+  </body>
+</html>
