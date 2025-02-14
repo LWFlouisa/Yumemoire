@@ -1,0 +1,3 @@
+charlotte(dead)
+charlotte(unknown_fate)
+charlotte(alive)

@@ -1,0 +1,11 @@
+def greeting
+  greeter = "Hello World"
+end
+
+def use_method
+  greeting
+
+  puts greete
+end
+
+use_method

@@ -1,0 +1,3 @@
+player(charlotte, not_dating).
+player(charlotte, relationship_unknown).
+player(charlotte, dating).
