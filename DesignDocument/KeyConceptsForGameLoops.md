@@ -26,7 +26,7 @@ device.
 items for sale.
 
 * Key point is NPCs are often the previous protagonist of previous games,
-otherwise how would they know where the tracking device or pet is. An entire map
+otherwise how would they know where the tracking device or pet is. An entire mindmap
 is made about those behaviours.
 
 
@@ -35,7 +35,7 @@ is made about those behaviours.
 
 * In a passive state only feeds itself and grows over time.
 
-* In a passive state, actively tracks what the enemy is learning about the
+* In a active state, actively tracks what the enemy is learning about the
 player's actions.
 
 
@@ -43,8 +43,7 @@ player's actions.
 --------------------
 
 * Player needs device to learn what enemy knows.
-  - With device, plays sees what enemy is actively learning.
+  - With device, player sees what enemy is actively learning.
   - You can then choose alternate behaviour branches to confuse the enemy.
-
 
 * Otherwise player can't predict what enemy knows about player.
