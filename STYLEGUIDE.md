@@ -15,3 +15,13 @@ Do not continuously issue breaking changes that undermine the integrity of this 
 
 ### For More Information
 I will be plugging my two game design documents for further information.
+
+#### Main Concepts
+[KEY CONCEPTS](https://lwflouisa.github.io/Yumemoire/DesignDocument/KeyConceptsForGameLoops)
+[MAIN GAMEPLAY ELEMENTS](https://lwflouisa.github.io/Yumemoire/DesignDocument/gameplay_elements_revised.jpg)
+[YUMEMOIRE DESIGN DOCUMENT](https://lwflouisa.github.io/Yumemoire/DesignDocument/yumemoire_main)
+[YUMEMOIRE MINDMAP](https://lwflouisa.github.io/Yumemoire/DesignDocument/yumemoire_main)
+[PASSING FOR HUMANS](https://lwflouisa.github.io/Yumemoire/DesignDocument/PassForHumanForZombie.png)
+
+#### Side Story
+[Generation Ship Shopping Mall](https://lwflouisa.github.io/Yumemoire/DesignDocument/GenerationShipShoppingMall.png)
