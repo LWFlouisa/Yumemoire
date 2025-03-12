@@ -20,5 +20,5 @@ color_context = [
   [["dr2",   "ph4"], ["dr2",      "ph5"], ["dr2",      "ph6"], ["dr2",     "ph7"], ["dr2",    "ph8"], ["dr2",    "ph9"], ["dr2",     "ph10"]],
 ]
 
-puts "Your color context is: #{color_context[0][0][0][0]} : #{color_context[1][0][0][0]}, #{color_context[1][0][0][1]}"
+puts "Your color context is: #{color_context[0][0][0][0]}, #{color_context[0][0][0][1]} : #{color_context[1][0][0][0]}, #{color_context[1][0][0][1]}"
 ~~~
