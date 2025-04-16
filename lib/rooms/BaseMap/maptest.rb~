@@ -1,0 +1,21 @@
+
+
+puts "\e[8;46;103t"
+puts "\e]11;#3A3937\e\\"
+
+puts "\[96"
+
+system("clear")
+
+map = File.read("template.txt")
+
+#print "\e'\033[96m#{map}\033[0m"
+
+puts "\e[38;2;187;127;118m #{map} \e[0m"
+
+gets.chomp
+
+puts "\e[8;23;80t"
+puts "\e]11;#000000\e\\"
+
+system("clear")
