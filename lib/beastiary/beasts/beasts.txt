@@ -1,0 +1,29 @@
+## Loans Words
+Cochon Au Homard - French version of Lobsterpig.
+Robusuta Buta    - Japanese version of Lobsterpig.
+
+## Standard Beasts
+Standard enemies the mad scientist will face on her journeys.
+
+### Sea Creatures
+The spirits of pirates whom reincarnated as lobster like pig-men.
+
+Cochonbuta         - [ Feminine ] La Cousinees De Le Aragnee Cochon, combines boars and lobsters.
+Robusuta Au Homard - [ Masculine ] Le Cousines De Le Aragnee Cochon, landlocked version of Cochonbuta.
+
+### Wearbears / Bear-Men
+Standard form of the bear-man in mythology.
+
+Ursinehomme        - [ Masculine ] Male version of wearbears.
+ursinefemme        - [ Feminine ] Female version of wearbears.
+
+### Kumabatto De Les Ghoules
+Bear-bats are the vampiric version of standard wearbears, and considered undead. Can be appeased through
+offering them protection in their human form, and you can gain rewards for kindness.
+
+Kumabatto   - The king of bear-bats.
+Ursinepiros - The scientific name for bear-bats.
+
+### Other Undead
+The Quantumcrufied - Undead creatures whom were once men, that come back as victims of quantum
+crusafiction.
