@@ -1,0 +1,150 @@
+Sitemap: https://uploadedfairywebfiction.loophole.site/
+
+# ChatGPT is completely disallowed
+User-agent: ChatGPT-User
+Disallow: /
+
+# CCBot is completely disallowed
+User-agent: CCBot
+Disallow: /
+
+# OpenAI is completely disallowed
+User-agent: OpenAI
+Disallow: /
+
+# Google-Extended is completely disallowed
+User-agent: Google-Extended
+Disallow: /
+
+# FacebookBot is completely disallowed
+User-agent: FacebookBot
+Disallow: /
+
+# Omgili is completely disallowed
+User-agent: OmgiliBot
+Disallow: /
+
+# Anthropic is completely disallowed
+User-agent: anthropic-ai
+Disallow: /
+
+# Cohere is completely disallowed
+User-agent: cohere-ai
+Disallow: /
+
+# advertising-related bots:
+User-agent: Mediapartners-Google*
+Disallow: /
+
+# Wikipedia work bots:
+User-agent: IsraBot
+Disallow: /
+
+User-agent: Orthogaffe
+Disallow: /
+
+User-agent: UbiCrawler
+Disallow: /
+
+User-agent: DOC
+Disallow: /
+
+User-agent: Zao
+Disallow: /
+
+User-agent: sitecheck.internetseer.com
+Disallow: /
+
+User-agent: Zealbot
+Disallow: /
+
+User-agent: MSIECrawler
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: Fetch
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: linko
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: Microsoft.URL.Control
+Disallow: /
+
+User-agent: Xenu
+Disallow: /
+
+User-agent: larbin
+Disallow: /
+
+User-agent: libwww
+Disallow: /
+
+User-agent: ZyBORG
+Disallow: /
+
+User-agent: Download Ninja
+Disallow: /
+
+User-agent: grub-client
+Disallow: /
+
+User-agent: fast
+Disallow: /
+
+User-agent: k2spider
+Disallow: /
+
+#
+# Hits many times per second, not acceptable
+# http://www.nameprotect.com/botinfo.html
+User-agent: NPBot
+Disallow: /
+
+# A capture bot, downloads gazillions of pages with no public benefit
+# http://www.webreaper.net/
+User-agent: WebReaper
+Disallow: /
+
+# For all other bots, don't scrape files with these extensions.
+User-agent: *
+Disallow: /*.png
+Disallow: /*.txt
+Disallow: /*.html
+Disallow: /*.xml
+Disallow: /*.css
+Disallow: /*.md
+Disallow: /*.sh
+Disallow: /*.jpg
+Disallow: /*.mp3
+Disallow: /*.mp4
+Disallow: /*.rb
+Disallow: /*.zip
+Disallow: /*.kra
+Disallow: /*.gpl
+Disallow: /*.gpa
+Disallow: /*.otf
+Disallow: /*.ttf

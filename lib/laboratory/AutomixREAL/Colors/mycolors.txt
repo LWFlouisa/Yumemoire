@@ -1,0 +1,18 @@
+#FC746B Salmon
+#EEA38F Pale Salmon
+#F9CF55 Maize
+#0AD422 Vibrant Green
+#65482C Japanese Bistre
+#7D567A Dull Purple
+#D27D48 Copper
+#B9B369 Khaki
+#B1F468 Pale Lime
+#50CE6C Medium Green
+#0DA52B Kelly Green
+#0B916B Viridian
+#F26E6E Salmon Pink
+#C7A2B1 Light Mauve
+#CBC4AA Bland
+#84A9CA Grey Blue
+#0A47B8 Sapphire
+#0D36A3 Sapphire Dark
