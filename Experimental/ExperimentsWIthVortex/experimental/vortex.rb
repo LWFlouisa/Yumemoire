@@ -1,0 +1,510 @@
+## System Nodes
+def node1
+  #                   Homard Au Cochon Tesutosujettos Ursinehomme
+  # Homard Au Cochon  Ho,Ho            Ho,Hu            Ho,We
+  # Tesutosujettos
+  # Ursinehomme
+  
+  possible_enemies = [
+     [["Homard Au Cochon", "Homard Au Cochon"], ["Homard Au Cochon", "Tesutosujettos"], ["Homard Au Cochon", "Ursinehomme"]],
+     [["Tesutosujettos",   "Homard Au Cochon"], ["Tesutosujettos",   "Tesutosujettos"], ["Tesutosujettos",   "Ursinehomme"]],
+     [["Usinehomme",       "Homard Au Cochon"], ["Ursinehomme",      "Tesutosujettos"], ["Ursinehomme",      "Ursinehomme"]],
+  ]
+
+  pe_row_options = [0, 1, 2]
+  pe_col_options = [0, 1, 2]
+  pe_arr_options = [0, 1]
+
+  pe_cur_row = pe_row_options.sample
+  pe_cur_col = pe_col_options.sample
+  pe_cur_arr = pe_arr_options.sample
+
+  enemy_type = possible_enemies[pe_cur_row][pe_cur_col][pe_cur_arr]
+
+  #              Anos Ea   Ana Denki   Anos Kaiyo   Ana Tsuchi   Anos Tenchi   Ana Shi
+  # Anos Ea      Ea, Ea       Ea, De      Ea, Ka       Ea, Tsu      Ea, Ten       Ea,  Shi Air
+  # Ana Denki    De, Ea       De, De      De, Ka       De, Tsu      De, Ten       De,  Shi Electricity
+  # Anos Kaiyo   Ka, Ea       Ka, De      Ka, Ka       Ka, Tsu      Ka, Teb       Ka,  Shi Aether
+  # Ana Tsuchi   Tsu, Ea      Tsu, De     Tsu, Ka      Tsu, Tsu     Tsu, Ten      Tsu, Shi Heaven
+  # Anos Tenchi  Ten, Ea      Ten, De     Ten, Ka      Ten, Tsu     Ten, Ten      Ten, Shi Earth
+  # Ana Shi      Shi, Ea      Shi, De     Shi, Ka      Shi, Tsu     Shi, Ten      Shi, Shi Death
+  
+  
+# エア Ea
+# 地球 
+# 風
+# 水
+# 火 - 火
+# 死亡事故
+# 光
+
+  possible_elements = [
+    [["Anos Ea",      "Anos Ea"], ["Anos Ea",      "Anos Denki"], ["Anos Ea",     "Anos Kaiyo"], ["Anos Ea",     "Ana Tsuchi"], ["Anos Ea",     "Anos Tenchi"], ["Anos Ea",     "Ana Shi"]],
+    [["Anos Denki",   "Anos Ea"], ["Anos Danki",   "Anos Denki"], ["Anos Danki",  "Anos Kaiyo"], ["Anos Denki",  "Ana Tsuchi"], ["Anos Denki",  "Anos Tenchi"], ["Anos Denki",  "Ana Shi"]],
+    [["Anos Kaiyo",   "Anos Ea"], ["Anos Kaiyo",   "Anos Denki"], ["Anos Kaiyo",  "Anos Kaiyo"], ["Anos Kaiyo",  "Ana Tsuchi"], ["Anos Kaiyo",  "Anos Tenchi"], ["Anos Kaiyo",  "Ana Shi"]],
+    [["Ana Tsuchi",   "Anos Ea"], ["Ana Tsuchi",   "Anos Denki"], ["Ana Tsuchi",  "Anos Kaiyo"], ["Ana Tsuchi",  "Ana Tsuchi"], ["Ana Tsuchi",  "Anos Tenchi"], ["Ana Tsuchi",  "Ana Shi"]],
+    [["Anos Tenchi",  "Anos Ea"], ["Anos Tenchi",  "Anos Denki"], ["Anos Tenchi", "Anos Kaiyo"], ["Anos Tenchi", "Ana Tsuchi"], ["Anos Tenchi", "Anos Tenchi"], ["Anos Tenchi", "Ana Shi"]],
+    [["Ana Shi",      "Anos Ea"], ["Ana Shi",      "Anos Denki"], ["Anos Shi",    "Anos Kaiyo"], ["Anos Shi",    "Ana Tsuchi"], ["Ana Shi",     "Anos Tenchi"], ["Ana Shi",     "Ana Shi"]],
+  ]
+
+  pel_row_options = [0, 1, 2, 3, 4, 5]
+  pel_col_options = [0, 1, 2, 3, 4, 5]
+  pel_arr_options = [0, 1]
+
+  pel_cur_row = pel_row_options.sample
+  pel_cur_col = pel_col_options.sample
+  pel_cur_arr = pel_arr_options.sample
+
+  element_type = possible_elements[pel_cur_row][pel_cur_col][pel_cur_arr]
+
+  #                    de les corrompue  de le recupere  de le soufflé  de le carbonise  de la noyee  de le noye  de le fissure  de les abandonnés
+  # de les corrompue   c,c               c,r             c,s            
+  # de le recupere
+  # de le soufflé
+  # de le carbonise
+  # de la noyee
+  # de le noye
+  # de le fissure
+  # de les abandonnés
+
+  classified_adverb = [
+    [ ["de les corrompue",  "de les corrompue"], ["de les corrompue",  "de le recupere"], ["de les corrompue",  "de le souffle"], ["de les corrompue",  "de le carbonise"], ["de les corrompue",  "de la noyee"], ["de les corrompue",  "de le noye"], ["de les corrompue",  "de le fissure"], ["de les corrompue",  "de les abandonnes"] ],
+    [ ["de le recupere",    "de les corrompue"], ["de le recupere",    "de le recupere"], ["de le recupere",    "de le souffle"], ["de le recupere",    "de le carbonise"], ["de le recupere",    "de la noyee"], ["de le recupere",    "de le noye"], ["de le recupere",    "de le fissure"], ["de le recupere",    "de les abandonnes"] ],
+    [ ["de le soufflé",     "de les corrompue"], ["de le soufflé",     "de le recupere"], ["de le soufflé",     "de le souffle"], ["de le soufflé",     "de le carbonise"], ["de le soufflé",     "de la noyee"], ["de le soufflé",     "de le noye"], ["de le soufflé",     "de le fissure"], ["de le soufflé",     "de les abandonnes"] ],
+    [ ["de le carbonise",   "de les corrompue"], ["de le carbonise",   "de le recupere"], ["de le carbonise",   "de le souffle"], ["de le carbonise",   "de le carbonise"], ["de le carbonise",   "de la noyee"], ["de le carbonise",   "de le noye"], ["de le carbonise",   "de le fissure"], ["de le carbonise",   "de les abandonnes"] ],
+    [ ["de la noyee",       "de les corrompue"], ["de la noyee",       "de le recupere"], ["de la noyee",       "de le souffle"], ["de la noyee",       "de le carbonise"], ["de la noyee",       "de la noyee"], ["de la noyee",       "de le noye"], ["de la noyee",       "de le fissure"], ["de la noyee",       "de les abandonnes"] ],
+    [ ["de le noye",        "de les corrompue"], ["de le noye",        "de le recupere"], ["de le noye",        "de le souffle"], ["de le noye",        "de le carbonise"], ["de le noye",        "de la noyee"], ["de le noyee",       "de le noye"], ["de le noye",        "de le fissure"], ["de le noye",        "de les abandonnes"] ],
+    [ ["de le fissure",     "de les corrompue"], ["de le fissure",     "de le recupere"], ["de le fissure",     "de le souffle"], ["de le fissure",     "de le carbonise"], ["de le fissure",     "de la noyee"], ["de le fissure",     "de le noye"], ["de le fissure",     "de le fissure"], ["de le fissure",     "de les abandonnes"] ],
+    [ ["de les abandonnes", "de les corrompue"], ["de les abandonnes", "de le recupere"], ["de les abandonnes", "de le souffle"], ["de les abandonnes", "de le carbonise"], ["de les abandonnes", "de la noyee"], ["de les abandonnes", "de le noye"], ["de les abandonnes", "de le fissure"], ["de les abandonnes", "de les abandonnes"] ]
+  ]
+
+  ca_row_options = [0, 1, 2, 3, 4, 5, 6, 7]
+  ca_col_options = [0, 1, 2, 3, 4, 5, 6, 7]
+  ca_arr_options = [0, 1]
+
+  ca_cur_row = ca_row_options.sample
+  ca_cur_col = ca_col_options.sample
+  ca_cur_arr = ca_arr_options.sample
+
+  adverb_type = classified_adverb[ca_cur_row][ca_cur_col][ca_cur_arr]
+
+  generated_enemy = "#{element_type} #{enemy_type} #{adverb_type}"
+
+  File.open("_enemynames/enemies.txt", "a") { |f|
+    f.puts "#{generated_enemy}"
+  }
+end
+
+def node2
+  #                   Homard Au Cochon Tesutosujettos Ursinehomme
+  # Homard Au Cochon  Ho,Ho            Ho,Hu            Ho,We
+  # Tesutosujettos
+  # Ursinehomme
+  
+  possible_enemies = [
+     [["Homard Au Cochon", "Homard Au Cochon"], ["Homard Au Cochon", "Tesutosujettos"], ["Homard Au Cochon", "Ursinehomme"]],
+     [["Tesutosujettos",   "Homard Au Cochon"], ["Tesutosujettos",   "Tesutosujettos"], ["Tesutosujettos",   "Ursinehomme"]],
+     [["Usinehomme",       "Homard Au Cochon"], ["Ursinehomme",      "Tesutosujettos"], ["Ursinehomme",      "Ursinehomme"]],
+  ]
+
+  pe_row_options = [0, 1, 2]
+  pe_col_options = [0, 1, 2]
+  pe_arr_options = [0, 1]
+
+  pe_cur_row = pe_row_options.sample
+  pe_cur_col = pe_col_options.sample
+  pe_cur_arr = pe_arr_options.sample
+
+  enemy_type = possible_enemies[pe_cur_row][pe_cur_col][pe_cur_arr]
+
+  ## Technically Ea means air book,
+
+  #              Anos Ea   Ana Denki   Anos Kaiyo   Ana Tsuchi   Anos Tenchi   Ana Shi
+  # Anos Ea   Ea, Ea       Ea, De      Ea, Ka       Ea, Tsu      Ea, Ten       Ea, Shi  Air
+  # Ana Denki    De, Ea       De, De      De, Ka       De, Tsu      De, Ten       De, Shi  Electricity
+  # Anos Kaiyo   Ka, Ea       Ka, De      Ka, Ka       Ka, Tsu      Ka, Teb       Ka, Shi  Aether
+  # Ana Tsuchi   Tsu, Ea      Tsu, De     Tsu, Ka      Tsu, Tsu     Tsu, Ten      Tsu, Shi Heaven
+  # Anos Tenchi  Ten, Ea      Ten, De     Ten, Ka      Ten, Tsu     Ten, Ten      Ten, Shi Earth
+  # Ana Shi      Shi, Ea      Shi, De     Shi, Ka      Shi, Tsu     Shi, Ten      Shi, Shi Deatg
+  
+  possible_elements = [
+    [["Anos Eebon",   "Anos Ea"], ["Anos Ea",      "Anos Denki"], ["Anos Ea",     "Anos Kaiyo"], ["Anos Ea",     "Ana Tsuchi"], ["Anos Ea",     "Anos Tenchi"], ["Anos Ea",     "Ana Shi"]],
+    [["Anos Denki",   "Anos Ea"], ["Anos Danki",   "Anos Denki"], ["Anos Danki",  "Anos Kaiyo"], ["Anos Denki",  "Ana Tsuchi"], ["Anos Denki",  "Anos Tenchi"], ["Anos Denki",  "Ana Shi"]],
+    [["Anos Kaiyo",   "Anos Ea"], ["Anos Kaiyo",   "Anos Denki"], ["Anos Kaiyo",  "Anos Kaiyo"], ["Anos Kaiyo",  "Ana Tsuchi"], ["Anos Kaiyo",  "Anos Tenchi"], ["Anos Kaiyo",  "Ana Shi"]],
+    [["Ana Tsuchi",   "Anos Ea"], ["Ana Tsuchi",   "Anos Denki"], ["Ana Tsuchi",  "Anos Kaiyo"], ["Ana Tsuchi",  "Ana Tsuchi"], ["Ana Tsuchi",  "Anos Tenchi"], ["Ana Tsuchi",  "Ana Shi"]],
+    [["Anos Tenchi",  "Anos Ea"], ["Anos Tenchi",  "Anos Denki"], ["Anos Tenchi", "Anos Kaiyo"], ["Anos Tenchi", "Ana Tsuchi"], ["Anos Tenchi", "Anos Tenchi"], ["Anos Tenchi", "Ana Shi"]],
+    [["Ana Shi",      "Anos Ea"], ["Ana Shi",      "Anos Denki"], ["Anos Shi",    "Anos Kaiyo"], ["Anos Shi",    "Ana Tsuchi"], ["Ana Shi",     "Anos Tenchi"], ["Ana Shi",     "Ana Shi"]],
+  ]
+
+  pel_row_options = [0, 1, 2, 3, 4, 5]
+  pel_col_options = [0, 1, 2, 3, 4, 5]
+  pel_arr_options = [0, 1]
+
+  pel_cur_row = pel_row_options.sample
+  pel_cur_col = pel_col_options.sample
+  pel_cur_arr = pel_arr_options.sample
+
+  element_type = possible_elements[pel_cur_row][pel_cur_col][pel_cur_arr]
+
+  classified_adverb = [
+    [ ["de les corrompue",  "de les corrompue"], ["de les corrompue",  "de le recupere"], ["de les corrompue",  "de le souffle"], ["de les corrompue",  "de le carbonise"], ["de les corrompue",  "de la noyee"], ["de les corrompue",  "de le noye"], ["de les corrompue",  "de le fissure"], ["de les corrompue",  "de les abandonnes"] ],
+    [ ["de le recupere",    "de les corrompue"], ["de le recupere",    "de le recupere"], ["de le recupere",    "de le souffle"], ["de le recupere",    "de le carbonise"], ["de le recupere",    "de la noyee"], ["de le recupere",    "de le noye"], ["de le recupere",    "de le fissure"], ["de le recupere",    "de les abandonnes"] ],
+    [ ["de le soufflé",     "de les corrompue"], ["de le soufflé",     "de le recupere"], ["de le soufflé",     "de le souffle"], ["de le soufflé",     "de le carbonise"], ["de le soufflé",     "de la noyee"], ["de le soufflé",     "de le noye"], ["de le soufflé",     "de le fissure"], ["de le soufflé",     "de les abandonnes"] ],
+    [ ["de le carbonise",   "de les corrompue"], ["de le carbonise",   "de le recupere"], ["de le carbonise",   "de le souffle"], ["de le carbonise",   "de le carbonise"], ["de le carbonise",   "de la noyee"], ["de le carbonise",   "de le noye"], ["de le carbonise",   "de le fissure"], ["de le carbonise",   "de les abandonnes"] ],
+    [ ["de la noyee",       "de les corrompue"], ["de la noyee",       "de le recupere"], ["de la noyee",       "de le souffle"], ["de la noyee",       "de le carbonise"], ["de la noyee",       "de la noyee"], ["de la noyee",       "de le noye"], ["de la noyee",       "de le fissure"], ["de la noyee",       "de les abandonnes"] ],
+    [ ["de le noye",        "de les corrompue"], ["de le noye",        "de le recupere"], ["de le noye",        "de le souffle"], ["de le noye",        "de le carbonise"], ["de le noye",        "de la noyee"], ["de le noyee",       "de le noye"], ["de le noye",        "de le fissure"], ["de le noye",        "de les abandonnes"] ],
+    [ ["de le fissure",     "de les corrompue"], ["de le fissure",     "de le recupere"], ["de le fissure",     "de le souffle"], ["de le fissure",     "de le carbonise"], ["de le fissure",     "de la noyee"], ["de le fissure",     "de le noye"], ["de le fissure",     "de le fissure"], ["de le fissure",     "de les abandonnes"] ],
+    [ ["de les abandonnes", "de les corrompue"], ["de les abandonnes", "de le recupere"], ["de les abandonnes", "de le souffle"], ["de les abandonnes", "de le carbonise"], ["de les abandonnes", "de la noyee"], ["de les abandonnes", "de le noye"], ["de les abandonnes", "de le fissure"], ["de les abandonnes", "de les abandonnes"] ]
+  ]
+
+  ca_row_options = [0, 1, 2, 3, 4, 5, 6, 7]
+  ca_col_options = [0, 1, 2, 3, 4, 5, 6, 7]
+  ca_arr_options = [0, 1]
+
+  ca_cur_row = ca_row_options.sample
+  ca_cur_col = ca_col_options.sample
+  ca_cur_arr = ca_arr_options.sample
+
+  adverb_type = classified_adverb[ca_cur_row][ca_cur_col][ca_cur_arr]
+
+  generated_enemy = "#{element_type} #{enemy_type} #{adverb_type}"
+
+
+  File.open("_enemynames/enemies.txt", "a") { |f|
+    f.puts "#{generated_enemy}"
+  }
+end
+
+def node4
+  #                   Homard Au Cochon Tesutosujettos Ursinehomme
+  # Homard Au Cochon  Ho,Ho            Ho,Hu            Ho,We
+  # Tesutosujettos
+  # Ursinehomme
+  
+  possible_enemies = [
+     [["Homard Au Cochon", "Homard Au Cochon"], ["Homard Au Cochon", "Tesutosujettos"], ["Homard Au Cochon", "Ursinehomme"]],
+     [["Tesutosujettos",   "Homard Au Cochon"], ["Tesutosujettos",   "Tesutosujettos"], ["Tesutosujettos",   "Ursinehomme"]],
+     [["Usinehomme",       "Homard Au Cochon"], ["Ursinehomme",      "Tesutosujettos"], ["Ursinehomme",      "Ursinehomme"]],
+  ]
+
+  pe_row_options = [0, 1, 2]
+  pe_col_options = [0, 1, 2]
+  pe_arr_options = [0, 1]
+
+  pe_cur_row = pe_row_options.sample
+  pe_cur_col = pe_col_options.sample
+  pe_cur_arr = pe_arr_options.sample
+
+  enemy_type = possible_enemies[pe_cur_row][pe_cur_col][pe_cur_arr]
+
+  #              Anos Ea   Ana Denki   Anos Kaiyo   Ana Tsuchi   Anos Tenchi   Ana Shi
+  # Anos Ea   Ea, Ea       Ea, De      Ea, Ka       Ea, Tsu      Ea, Ten       Ea, Shi
+  # Ana Denki    De, Ea       De, De      De, Ka       De, Tsu      De, Ten       De, Shi
+  # Anos Kaiyo   Ka, Ea       Ka, De      Ka, Ka       Ka, Tsu      Ka, Teb       Ka, Shi
+  # Ana Tsuchi   Tsu, Ea      Tsu, De     Tsu, Ka      Tsu, Tsu     Tsu, Ten      Tsu, Shi
+  # Anos Tenchi  Ten, Ea      Ten, De     Ten, Ka      Ten, Tsu     Ten, Ten      Ten, Shi
+  # Ana Shi      Shi, Ea      Shi, De     Shi, Ka      Shi, Tsu     Shi, Ten      Shi, Shi
+  
+  possible_elements = [
+    [["Anos Eebon",   "Anos Ea"], ["Anos Ea",      "Anos Denki"], ["Anos Ea",     "Anos Kaiyo"], ["Anos Ea",     "Ana Tsuchi"], ["Anos Ea",     "Anos Tenchi"], ["Anos Ea",     "Ana Shi"]],
+    [["Anos Denki",   "Anos Ea"], ["Anos Danki",   "Anos Denki"], ["Anos Danki",  "Anos Kaiyo"], ["Anos Denki",  "Ana Tsuchi"], ["Anos Denki",  "Anos Tenchi"], ["Anos Denki",  "Ana Shi"]],
+    [["Anos Kaiyo",   "Anos Ea"], ["Anos Kaiyo",   "Anos Denki"], ["Anos Kaiyo",  "Anos Kaiyo"], ["Anos Kaiyo",  "Ana Tsuchi"], ["Anos Kaiyo",  "Anos Tenchi"], ["Anos Kaiyo",  "Ana Shi"]],
+    [["Ana Tsuchi",   "Anos Ea"], ["Ana Tsuchi",   "Anos Denki"], ["Ana Tsuchi",  "Anos Kaiyo"], ["Ana Tsuchi",  "Ana Tsuchi"], ["Ana Tsuchi",  "Anos Tenchi"], ["Ana Tsuchi",  "Ana Shi"]],
+    [["Anos Tenchi",  "Anos Ea"], ["Anos Tenchi",  "Anos Denki"], ["Anos Tenchi", "Anos Kaiyo"], ["Anos Tenchi", "Ana Tsuchi"], ["Anos Tenchi", "Anos Tenchi"], ["Anos Tenchi", "Ana Shi"]],
+    [["Ana Shi",      "Anos Ea"], ["Ana Shi",      "Anos Denki"], ["Anos Shi",    "Anos Kaiyo"], ["Anos Shi",    "Ana Tsuchi"], ["Ana Shi",     "Anos Tenchi"], ["Ana Shi",     "Ana Shi"]],
+  ]
+
+  pel_row_options = [0, 1, 2, 3, 4, 5]
+  pel_col_options = [0, 1, 2, 3, 4, 5]
+  pel_arr_options = [0, 1]
+
+  pel_cur_row = pel_row_options.sample
+  pel_cur_col = pel_col_options.sample
+  pel_cur_arr = pel_arr_options.sample
+
+  element_type = possible_elements[pel_cur_row][pel_cur_col][pel_cur_arr]
+
+  classified_adverb = [
+    [ ["de les corrompue",  "de les corrompue"], ["de les corrompue",  "de le recupere"], ["de les corrompue",  "de le souffle"], ["de les corrompue",  "de le carbonise"], ["de les corrompue",  "de la noyee"], ["de les corrompue",  "de le noye"], ["de les corrompue",  "de le fissure"], ["de les corrompue",  "de les abandonnes"] ],
+    [ ["de le recupere",    "de les corrompue"], ["de le recupere",    "de le recupere"], ["de le recupere",    "de le souffle"], ["de le recupere",    "de le carbonise"], ["de le recupere",    "de la noyee"], ["de le recupere",    "de le noye"], ["de le recupere",    "de le fissure"], ["de le recupere",    "de les abandonnes"] ],
+    [ ["de le soufflé",     "de les corrompue"], ["de le soufflé",     "de le recupere"], ["de le soufflé",     "de le souffle"], ["de le soufflé",     "de le carbonise"], ["de le soufflé",     "de la noyee"], ["de le soufflé",     "de le noye"], ["de le soufflé",     "de le fissure"], ["de le soufflé",     "de les abandonnes"] ],
+    [ ["de le carbonise",   "de les corrompue"], ["de le carbonise",   "de le recupere"], ["de le carbonise",   "de le souffle"], ["de le carbonise",   "de le carbonise"], ["de le carbonise",   "de la noyee"], ["de le carbonise",   "de le noye"], ["de le carbonise",   "de le fissure"], ["de le carbonise",   "de les abandonnes"] ],
+    [ ["de la noyee",       "de les corrompue"], ["de la noyee",       "de le recupere"], ["de la noyee",       "de le souffle"], ["de la noyee",       "de le carbonise"], ["de la noyee",       "de la noyee"], ["de la noyee",       "de le noye"], ["de la noyee",       "de le fissure"], ["de la noyee",       "de les abandonnes"] ],
+    [ ["de le noye",        "de les corrompue"], ["de le noye",        "de le recupere"], ["de le noye",        "de le souffle"], ["de le noye",        "de le carbonise"], ["de le noye",        "de la noyee"], ["de le noyee",       "de le noye"], ["de le noye",        "de le fissure"], ["de le noye",        "de les abandonnes"] ],
+    [ ["de le fissure",     "de les corrompue"], ["de le fissure",     "de le recupere"], ["de le fissure",     "de le souffle"], ["de le fissure",     "de le carbonise"], ["de le fissure",     "de la noyee"], ["de le fissure",     "de le noye"], ["de le fissure",     "de le fissure"], ["de le fissure",     "de les abandonnes"] ],
+    [ ["de les abandonnes", "de les corrompue"], ["de les abandonnes", "de le recupere"], ["de les abandonnes", "de le souffle"], ["de les abandonnes", "de le carbonise"], ["de les abandonnes", "de la noyee"], ["de les abandonnes", "de le noye"], ["de les abandonnes", "de le fissure"], ["de les abandonnes", "de les abandonnes"] ]
+  ]
+
+  ca_row_options = [0, 1, 2, 3, 4, 5, 6, 7]
+  ca_col_options = [0, 1, 2, 3, 4, 5, 6, 7]
+  ca_arr_options = [0, 1]
+
+  ca_cur_row = ca_row_options.sample
+  ca_cur_col = ca_col_options.sample
+  ca_cur_arr = ca_arr_options.sample
+
+  adverb_type = classified_adverb[ca_cur_row][ca_cur_col][ca_cur_arr]
+
+  generated_enemy = "#{element_type} #{enemy_type} #{adverb_type}"
+
+
+  File.open("_enemynames/enemies.txt", "a") { |f|
+    f.puts "#{generated_enemy}"
+  }
+end
+
+def node8
+  #                   Homard Au Cochon Tesutosujettos Ursinehomme
+  # Homard Au Cochon  Ho,Ho            Ho,Hu            Ho,We
+  # Tesutosujettos
+  # Ursinehomme
+  
+  possible_enemies = [
+     [["Homard Au Cochon", "Homard Au Cochon"], ["Homard Au Cochon", "Tesutosujettos"], ["Homard Au Cochon", "Ursinehomme"]],
+     [["Tesutosujettos",   "Homard Au Cochon"], ["Tesutosujettos",   "Tesutosujettos"], ["Tesutosujettos",   "Ursinehomme"]],
+     [["Usinehomme",       "Homard Au Cochon"], ["Ursinehomme",      "Tesutosujettos"], ["Ursinehomme",      "Ursinehomme"]],
+  ]
+
+  pe_row_options = [0, 1, 2]
+  pe_col_options = [0, 1, 2]
+  pe_arr_options = [0, 1]
+
+  pe_cur_row = pe_row_options.sample
+  pe_cur_col = pe_col_options.sample
+  pe_cur_arr = pe_arr_options.sample
+
+  enemy_type = possible_enemies[pe_cur_row][pe_cur_col][pe_cur_arr]
+
+  #              Anos Ea   Ana Denki   Anos Kaiyo   Ana Tsuchi   Anos Tenchi   Ana Shi
+  # Anos Ea   Ea, Ea       Ea, De      Ea, Ka       Ea, Tsu      Ea, Ten       Ea, Shi
+  # Ana Denki    De, Ea       De, De      De, Ka       De, Tsu      De, Ten       De, Shi
+  # Anos Kaiyo   Ka, Ea       Ka, De      Ka, Ka       Ka, Tsu      Ka, Teb       Ka, Shi
+  # Ana Tsuchi   Tsu, Ea      Tsu, De     Tsu, Ka      Tsu, Tsu     Tsu, Ten      Tsu, Shi
+  # Anos Tenchi  Ten, Ea      Ten, De     Ten, Ka      Ten, Tsu     Ten, Ten      Ten, Shi
+  # Ana Shi      Shi, Ea      Shi, De     Shi, Ka      Shi, Tsu     Shi, Ten      Shi, Shi
+  
+  possible_elements = [
+    [["Anos Eebon",   "Anos Ea"], ["Anos Ea",      "Anos Denki"], ["Anos Ea",     "Anos Kaiyo"], ["Anos Ea",     "Ana Tsuchi"], ["Anos Ea",     "Anos Tenchi"], ["Anos Ea",     "Ana Shi"]],
+    [["Anos Denki",   "Anos Ea"], ["Anos Danki",   "Anos Denki"], ["Anos Danki",  "Anos Kaiyo"], ["Anos Denki",  "Ana Tsuchi"], ["Anos Denki",  "Anos Tenchi"], ["Anos Denki",  "Ana Shi"]],
+    [["Anos Kaiyo",   "Anos Ea"], ["Anos Kaiyo",   "Anos Denki"], ["Anos Kaiyo",  "Anos Kaiyo"], ["Anos Kaiyo",  "Ana Tsuchi"], ["Anos Kaiyo",  "Anos Tenchi"], ["Anos Kaiyo",  "Ana Shi"]],
+    [["Ana Tsuchi",   "Anos Ea"], ["Ana Tsuchi",   "Anos Denki"], ["Ana Tsuchi",  "Anos Kaiyo"], ["Ana Tsuchi",  "Ana Tsuchi"], ["Ana Tsuchi",  "Anos Tenchi"], ["Ana Tsuchi",  "Ana Shi"]],
+    [["Anos Tenchi",  "Anos Ea"], ["Anos Tenchi",  "Anos Denki"], ["Anos Tenchi", "Anos Kaiyo"], ["Anos Tenchi", "Ana Tsuchi"], ["Anos Tenchi", "Anos Tenchi"], ["Anos Tenchi", "Ana Shi"]],
+    [["Ana Shi",      "Anos Ea"], ["Ana Shi",      "Anos Denki"], ["Anos Shi",    "Anos Kaiyo"], ["Anos Shi",    "Ana Tsuchi"], ["Ana Shi",     "Anos Tenchi"], ["Ana Shi",     "Ana Shi"]],
+  ]
+
+  pel_row_options = [0, 1, 2, 3, 4, 5]
+  pel_col_options = [0, 1, 2, 3, 4, 5]
+  pel_arr_options = [0, 1]
+
+  pel_cur_row = pel_row_options.sample
+  pel_cur_col = pel_col_options.sample
+  pel_cur_arr = pel_arr_options.sample
+
+  element_type = possible_elements[pel_cur_row][pel_cur_col][pel_cur_arr]
+
+  classified_adverb = [
+    [ ["de les corrompue",  "de les corrompue"], ["de les corrompue",  "de le recupere"], ["de les corrompue",  "de le souffle"], ["de les corrompue",  "de le carbonise"], ["de les corrompue",  "de la noyee"], ["de les corrompue",  "de le noye"], ["de les corrompue",  "de le fissure"], ["de les corrompue",  "de les abandonnes"] ],
+    [ ["de le recupere",    "de les corrompue"], ["de le recupere",    "de le recupere"], ["de le recupere",    "de le souffle"], ["de le recupere",    "de le carbonise"], ["de le recupere",    "de la noyee"], ["de le recupere",    "de le noye"], ["de le recupere",    "de le fissure"], ["de le recupere",    "de les abandonnes"] ],
+    [ ["de le soufflé",     "de les corrompue"], ["de le soufflé",     "de le recupere"], ["de le soufflé",     "de le souffle"], ["de le soufflé",     "de le carbonise"], ["de le soufflé",     "de la noyee"], ["de le soufflé",     "de le noye"], ["de le soufflé",     "de le fissure"], ["de le soufflé",     "de les abandonnes"] ],
+    [ ["de le carbonise",   "de les corrompue"], ["de le carbonise",   "de le recupere"], ["de le carbonise",   "de le souffle"], ["de le carbonise",   "de le carbonise"], ["de le carbonise",   "de la noyee"], ["de le carbonise",   "de le noye"], ["de le carbonise",   "de le fissure"], ["de le carbonise",   "de les abandonnes"] ],
+    [ ["de la noyee",       "de les corrompue"], ["de la noyee",       "de le recupere"], ["de la noyee",       "de le souffle"], ["de la noyee",       "de le carbonise"], ["de la noyee",       "de la noyee"], ["de la noyee",       "de le noye"], ["de la noyee",       "de le fissure"], ["de la noyee",       "de les abandonnes"] ],
+    [ ["de le noye",        "de les corrompue"], ["de le noye",        "de le recupere"], ["de le noye",        "de le souffle"], ["de le noye",        "de le carbonise"], ["de le noye",        "de la noyee"], ["de le noyee",       "de le noye"], ["de le noye",        "de le fissure"], ["de le noye",        "de les abandonnes"] ],
+    [ ["de le fissure",     "de les corrompue"], ["de le fissure",     "de le recupere"], ["de le fissure",     "de le souffle"], ["de le fissure",     "de le carbonise"], ["de le fissure",     "de la noyee"], ["de le fissure",     "de le noye"], ["de le fissure",     "de le fissure"], ["de le fissure",     "de les abandonnes"] ],
+    [ ["de les abandonnes", "de les corrompue"], ["de les abandonnes", "de le recupere"], ["de les abandonnes", "de le souffle"], ["de les abandonnes", "de le carbonise"], ["de les abandonnes", "de la noyee"], ["de les abandonnes", "de le noye"], ["de les abandonnes", "de le fissure"], ["de les abandonnes", "de les abandonnes"] ]
+  ]
+
+  ca_row_options = [0, 1, 2, 3, 4, 5, 6, 7]
+  ca_col_options = [0, 1, 2, 3, 4, 5, 6, 7]
+  ca_arr_options = [0, 1]
+
+  ca_cur_row = ca_row_options.sample
+  ca_cur_col = ca_col_options.sample
+  ca_cur_arr = ca_arr_options.sample
+
+  adverb_type = classified_adverb[ca_cur_row][ca_cur_col][ca_cur_arr]
+
+  generated_enemy = "#{element_type} #{enemy_type} #{adverb_type}"
+
+
+  File.open("_enemynames/enemies.txt", "a") { |f|
+    f.puts "#{generated_enemy}"
+  }
+end
+
+def node7
+  #                   Homard Au Cochon Tesutosujettos Ursinehomme
+  # Homard Au Cochon  Ho,Ho            Ho,Hu            Ho,We
+  # Tesutosujettos
+  # Ursinehomme
+  
+  possible_enemies = [
+     [["Homard Au Cochon", "Homard Au Cochon"], ["Homard Au Cochon", "Tesutosujettos"], ["Homard Au Cochon", "Ursinehomme"]],
+     [["Tesutosujettos",   "Homard Au Cochon"], ["Tesutosujettos",   "Tesutosujettos"], ["Tesutosujettos",   "Ursinehomme"]],
+     [["Usinehomme",       "Homard Au Cochon"], ["Ursinehomme",      "Tesutosujettos"], ["Ursinehomme",      "Ursinehomme"]],
+  ]
+
+  pe_row_options = [0, 1, 2]
+  pe_col_options = [0, 1, 2]
+  pe_arr_options = [0, 1]
+
+  pe_cur_row = pe_row_options.sample
+  pe_cur_col = pe_col_options.sample
+  pe_cur_arr = pe_arr_options.sample
+
+  enemy_type = possible_enemies[pe_cur_row][pe_cur_col][pe_cur_arr]
+
+  #              Anos Ea   Ana Denki   Anos Kaiyo   Ana Tsuchi   Anos Tenchi   Ana Shi
+  # Anos Ea   Ea, Ea       Ea, De      Ea, Ka       Ea, Tsu      Ea, Ten       Ea, Shi
+  # Ana Denki    De, Ea       De, De      De, Ka       De, Tsu      De, Ten       De, Shi
+  # Anos Kaiyo   Ka, Ea       Ka, De      Ka, Ka       Ka, Tsu      Ka, Teb       Ka, Shi
+  # Ana Tsuchi   Tsu, Ea      Tsu, De     Tsu, Ka      Tsu, Tsu     Tsu, Ten      Tsu, Shi
+  # Anos Tenchi  Ten, Ea      Ten, De     Ten, Ka      Ten, Tsu     Ten, Ten      Ten, Shi
+  # Ana Shi      Shi, Ea      Shi, De     Shi, Ka      Shi, Tsu     Shi, Ten      Shi, Shi
+  
+  possible_elements = [
+    [["Anos Ea",      "Anos Ea"], ["Anos Ea",      "Anos Denki"], ["Anos Ea",     "Anos Kaiyo"], ["Anos Ea",     "Ana Tsuchi"], ["Anos Ea",     "Anos Tenchi"], ["Anos Ea",     "Ana Shi"]],
+    [["Anos Denki",   "Anos Ea"], ["Anos Danki",   "Anos Denki"], ["Anos Danki",  "Anos Kaiyo"], ["Anos Denki",  "Ana Tsuchi"], ["Anos Denki",  "Anos Tenchi"], ["Anos Denki",  "Ana Shi"]],
+    [["Anos Kaiyo",   "Anos Ea"], ["Anos Kaiyo",   "Anos Denki"], ["Anos Kaiyo",  "Anos Kaiyo"], ["Anos Kaiyo",  "Ana Tsuchi"], ["Anos Kaiyo",  "Anos Tenchi"], ["Anos Kaiyo",  "Ana Shi"]],
+    [["Ana Tsuchi",   "Anos Ea"], ["Ana Tsuchi",   "Anos Denki"], ["Ana Tsuchi",  "Anos Kaiyo"], ["Ana Tsuchi",  "Ana Tsuchi"], ["Ana Tsuchi",  "Anos Tenchi"], ["Ana Tsuchi",  "Ana Shi"]],
+    [["Anos Tenchi",  "Anos Ea"], ["Anos Tenchi",  "Anos Denki"], ["Anos Tenchi", "Anos Kaiyo"], ["Anos Tenchi", "Ana Tsuchi"], ["Anos Tenchi", "Anos Tenchi"], ["Anos Tenchi", "Ana Shi"]],
+    [["Ana Shi",      "Anos Ea"], ["Ana Shi",      "Anos Denki"], ["Anos Shi",    "Anos Kaiyo"], ["Anos Shi",    "Ana Tsuchi"], ["Ana Shi",     "Anos Tenchi"], ["Ana Shi",     "Ana Shi"]],
+  ]
+
+  pel_row_options = [0, 1, 2, 3, 4, 5]
+  pel_col_options = [0, 1, 2, 3, 4, 5]
+  pel_arr_options = [0, 1]
+
+  pel_cur_row = pel_row_options.sample
+  pel_cur_col = pel_col_options.sample
+  pel_cur_arr = pel_arr_options.sample
+
+  element_type = possible_elements[pel_cur_row][pel_cur_col][pel_cur_arr]
+
+  classified_adverb = [
+    [ ["de les corrompue",  "de les corrompue"], ["de les corrompue",  "de le recupere"], ["de les corrompue",  "de le souffle"], ["de les corrompue",  "de le carbonise"], ["de les corrompue",  "de la noyee"], ["de les corrompue",  "de le noye"], ["de les corrompue",  "de le fissure"], ["de les corrompue",  "de les abandonnes"] ],
+    [ ["de le recupere",    "de les corrompue"], ["de le recupere",    "de le recupere"], ["de le recupere",    "de le souffle"], ["de le recupere",    "de le carbonise"], ["de le recupere",    "de la noyee"], ["de le recupere",    "de le noye"], ["de le recupere",    "de le fissure"], ["de le recupere",    "de les abandonnes"] ],
+    [ ["de le soufflé",     "de les corrompue"], ["de le soufflé",     "de le recupere"], ["de le soufflé",     "de le souffle"], ["de le soufflé",     "de le carbonise"], ["de le soufflé",     "de la noyee"], ["de le soufflé",     "de le noye"], ["de le soufflé",     "de le fissure"], ["de le soufflé",     "de les abandonnes"] ],
+    [ ["de le carbonise",   "de les corrompue"], ["de le carbonise",   "de le recupere"], ["de le carbonise",   "de le souffle"], ["de le carbonise",   "de le carbonise"], ["de le carbonise",   "de la noyee"], ["de le carbonise",   "de le noye"], ["de le carbonise",   "de le fissure"], ["de le carbonise",   "de les abandonnes"] ],
+    [ ["de la noyee",       "de les corrompue"], ["de la noyee",       "de le recupere"], ["de la noyee",       "de le souffle"], ["de la noyee",       "de le carbonise"], ["de la noyee",       "de la noyee"], ["de la noyee",       "de le noye"], ["de la noyee",       "de le fissure"], ["de la noyee",       "de les abandonnes"] ],
+    [ ["de le noye",        "de les corrompue"], ["de le noye",        "de le recupere"], ["de le noye",        "de le souffle"], ["de le noye",        "de le carbonise"], ["de le noye",        "de la noyee"], ["de le noyee",       "de le noye"], ["de le noye",        "de le fissure"], ["de le noye",        "de les abandonnes"] ],
+    [ ["de le fissure",     "de les corrompue"], ["de le fissure",     "de le recupere"], ["de le fissure",     "de le souffle"], ["de le fissure",     "de le carbonise"], ["de le fissure",     "de la noyee"], ["de le fissure",     "de le noye"], ["de le fissure",     "de le fissure"], ["de le fissure",     "de les abandonnes"] ],
+    [ ["de les abandonnes", "de les corrompue"], ["de les abandonnes", "de le recupere"], ["de les abandonnes", "de le souffle"], ["de les abandonnes", "de le carbonise"], ["de les abandonnes", "de la noyee"], ["de les abandonnes", "de le noye"], ["de les abandonnes", "de le fissure"], ["de les abandonnes", "de les abandonnes"] ]
+  ]
+
+  ca_row_options = [0, 1, 2, 3, 4, 5, 6, 7]
+  ca_col_options = [0, 1, 2, 3, 4, 5, 6, 7]
+  ca_arr_options = [0, 1]
+
+  ca_cur_row = ca_row_options.sample
+  ca_cur_col = ca_col_options.sample
+  ca_cur_arr = ca_arr_options.sample
+
+  adverb_type = classified_adverb[ca_cur_row][ca_cur_col][ca_cur_arr]
+
+  generated_enemy = "#{element_type} #{enemy_type} #{adverb_type}"
+
+
+  File.open("_enemynames/enemies.txt", "a") { |f|
+    f.puts "#{generated_enemy}"
+  }
+end
+
+def node5
+  #                   Homard Au Cochon Tesutosujettos Ursinehomme
+  # Homard Au Cochon  Ho,Ho            Ho,Hu            Ho,We
+  # Tesutosujettos
+  # Ursinehomme
+  
+  possible_enemies = [
+     [["Homard Au Cochon", "Homard Au Cochon"], ["Homard Au Cochon", "Tesutosujettos"], ["Homard Au Cochon", "Ursinehomme"]],
+     [["Tesutosujettos",   "Homard Au Cochon"], ["Tesutosujettos",   "Tesutosujettos"], ["Tesutosujettos",   "Ursinehomme"]],
+     [["Usinehomme",       "Homard Au Cochon"], ["Ursinehomme",      "Tesutosujettos"], ["Ursinehomme",      "Ursinehomme"]],
+  ]
+
+  pe_row_options = [0, 1, 2]
+  pe_col_options = [0, 1, 2]
+  pe_arr_options = [0, 1]
+
+  pe_cur_row = pe_row_options.sample
+  pe_cur_col = pe_col_options.sample
+  pe_cur_arr = pe_arr_options.sample
+
+  enemy_type = possible_enemies[pe_cur_row][pe_cur_col][pe_cur_arr]
+
+  #              Anos Ea   Ana Denki   Anos Kaiyo   Ana Tsuchi   Anos Tenchi   Ana Shi
+  # Anos Ea   Ea, Ea       Ea, De      Ea, Ka       Ea, Tsu      Ea, Ten       Ea, Shi
+  # Ana Denki    De, Ea       De, De      De, Ka       De, Tsu      De, Ten       De, Shi
+  # Anos Kaiyo   Ka, Ea       Ka, De      Ka, Ka       Ka, Tsu      Ka, Teb       Ka, Shi
+  # Ana Tsuchi   Tsu, Ea      Tsu, De     Tsu, Ka      Tsu, Tsu     Tsu, Ten      Tsu, Shi
+  # Anos Tenchi  Ten, Ea      Ten, De     Ten, Ka      Ten, Tsu     Ten, Ten      Ten, Shi
+  # Ana Shi      Shi, Ea      Shi, De     Shi, Ka      Shi, Tsu     Shi, Ten      Shi, Shi
+  
+  possible_elements = [
+    [["Anos Eebon",   "Anos Ea"], ["Anos Ea",   "Anos Denki"], ["Anos Ea",  "Anos Kaiyo"], ["Anos Ea",  "Ana Tsuchi"], ["Anos Ea",  "Anos Tenchi"], ["Anos Ea",  "Ana Shi"]],
+    [["Anos Denki",   "Anos Ea"], ["Anos Danki",   "Anos Denki"], ["Anos Danki",  "Anos Kaiyo"], ["Anos Denki",  "Ana Tsuchi"], ["Anos Denki",  "Anos Tenchi"], ["Anos Denki",  "Ana Shi"]],
+    [["Anos Kaiyo",   "Anos Ea"], ["Anos Kaiyo",   "Anos Denki"], ["Anos Kaiyo",  "Anos Kaiyo"], ["Anos Kaiyo",  "Ana Tsuchi"], ["Anos Kaiyo",  "Anos Tenchi"], ["Anos Kaiyo",  "Ana Shi"]],
+    [["Ana Tsuchi",   "Anos Ea"], ["Ana Tsuchi",   "Anos Denki"], ["Ana Tsuchi",  "Anos Kaiyo"], ["Ana Tsuchi",  "Ana Tsuchi"], ["Ana Tsuchi",  "Anos Tenchi"], ["Ana Tsuchi",  "Ana Shi"]],
+    [["Anos Tenchi",  "Anos Ea"], ["Anos Tenchi",  "Anos Denki"], ["Anos Tenchi", "Anos Kaiyo"], ["Anos Tenchi", "Ana Tsuchi"], ["Anos Tenchi", "Anos Tenchi"], ["Anos Tenchi", "Ana Shi"]],
+    [["Ana Shi",      "Anos Ea"], ["Ana Shi",      "Anos Denki"], ["Anos Shi",    "Anos Kaiyo"], ["Anos Shi",    "Ana Tsuchi"], ["Ana Shi",     "Anos Tenchi"], ["Ana Shi",     "Ana Shi"]],
+  ]
+
+  pel_row_options = [0, 1, 2, 3, 4, 5]
+  pel_col_options = [0, 1, 2, 3, 4, 5]
+  pel_arr_options = [0, 1]
+
+  pel_cur_row = pel_row_options.sample
+  pel_cur_col = pel_col_options.sample
+  pel_cur_arr = pel_arr_options.sample
+
+  element_type = possible_elements[pel_cur_row][pel_cur_col][pel_cur_arr]
+
+  classified_adverb = [
+    [ ["de les corrompue",  "de les corrompue"], ["de les corrompue",  "de le recupere"], ["de les corrompue",  "de le souffle"], ["de les corrompue",  "de le carbonise"], ["de les corrompue",  "de la noyee"], ["de les corrompue",  "de le noye"], ["de les corrompue",  "de le fissure"], ["de les corrompue",  "de les abandonnes"] ],
+    [ ["de le recupere",    "de les corrompue"], ["de le recupere",    "de le recupere"], ["de le recupere",    "de le souffle"], ["de le recupere",    "de le carbonise"], ["de le recupere",    "de la noyee"], ["de le recupere",    "de le noye"], ["de le recupere",    "de le fissure"], ["de le recupere",    "de les abandonnes"] ],
+    [ ["de le soufflé",     "de les corrompue"], ["de le soufflé",     "de le recupere"], ["de le soufflé",     "de le souffle"], ["de le soufflé",     "de le carbonise"], ["de le soufflé",     "de la noyee"], ["de le soufflé",     "de le noye"], ["de le soufflé",     "de le fissure"], ["de le soufflé",     "de les abandonnes"] ],
+    [ ["de le carbonise",   "de les corrompue"], ["de le carbonise",   "de le recupere"], ["de le carbonise",   "de le souffle"], ["de le carbonise",   "de le carbonise"], ["de le carbonise",   "de la noyee"], ["de le carbonise",   "de le noye"], ["de le carbonise",   "de le fissure"], ["de le carbonise",   "de les abandonnes"] ],
+    [ ["de la noyee",       "de les corrompue"], ["de la noyee",       "de le recupere"], ["de la noyee",       "de le souffle"], ["de la noyee",       "de le carbonise"], ["de la noyee",       "de la noyee"], ["de la noyee",       "de le noye"], ["de la noyee",       "de le fissure"], ["de la noyee",       "de les abandonnes"] ],
+    [ ["de le noye",        "de les corrompue"], ["de le noye",        "de le recupere"], ["de le noye",        "de le souffle"], ["de le noye",        "de le carbonise"], ["de le noye",        "de la noyee"], ["de le noyee",       "de le noye"], ["de le noye",        "de le fissure"], ["de le noye",        "de les abandonnes"] ],
+    [ ["de le fissure",     "de les corrompue"], ["de le fissure",     "de le recupere"], ["de le fissure",     "de le souffle"], ["de le fissure",     "de le carbonise"], ["de le fissure",     "de la noyee"], ["de le fissure",     "de le noye"], ["de le fissure",     "de le fissure"], ["de le fissure",     "de les abandonnes"] ],
+    [ ["de les abandonnes", "de les corrompue"], ["de les abandonnes", "de le recupere"], ["de les abandonnes", "de le souffle"], ["de les abandonnes", "de le carbonise"], ["de les abandonnes", "de la noyee"], ["de les abandonnes", "de le noye"], ["de les abandonnes", "de le fissure"], ["de les abandonnes", "de les abandonnes"] ]
+  ]
+
+  ca_row_options = [0, 1, 2, 3, 4, 5, 6, 7]
+  ca_col_options = [0, 1, 2, 3, 4, 5, 6, 7]
+  ca_arr_options = [0, 1]
+
+  ca_cur_row = ca_row_options.sample
+  ca_cur_col = ca_col_options.sample
+  ca_cur_arr = ca_arr_options.sample
+
+  adverb_type = classified_adverb[ca_cur_row][ca_cur_col][ca_cur_arr]
+
+  generated_enemy = "#{element_type} #{enemy_type} #{adverb_type}"
+
+  File.open("_enemynames/enemies.txt", "a") { |f|
+    f.puts "#{generated_enemy}"
+  }
+end
+
+## Storage nodes
+def node3
+  $first_enemy_hp  = $enemy_hp + $enemy_heal
+  $eighth_enemy_hp = $enemy_hp + $enemy_heal
+end
+
+def node6
+  $seventh_enemy_hp  = $enemy_hp + $enemy_heal
+  $fifth_enemy_hp    = $enemy_hp + $enemy_heal
+end
+
+def node9
+  $second_enemy_hp  = $enemy_hp + $enemy_heal
+  $fourth_enemy_hp = $enemy_hp + $enemy_heal
+end
+
+node1
+node2
+node4
+node8
+node7
+node5

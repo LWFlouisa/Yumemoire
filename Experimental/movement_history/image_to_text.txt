@@ -1,0 +1,10 @@
+#          image_1  image_2  image_3  image_4  image_5  image_6  image_7
+# image_1    I1,I1    I1,I2    I1,I3    I1,I4    I1,I5    I1,I6    I1,I7
+# image_2    I2,I1    I2,I2    I2,I3    I2,I4    I2,I5    I2,I6    I2,I7
+# image_3    I3,I1    I3,I2    I3,I3    I3,I4    I3,I5    I3,I6    I3,I7
+# image_4    I4,I1    I4,I2    I4,I3    I4,I4    I4,I5    I4,I6    I4,I7
+# image_5    I5,I1    I5,I2    I5,I3    I5,I4    I5,I5    I5,I6    I5,I7
+# image_6    I6,I1    I6,I2    I6,I3    I6,I4    I6,I5    I6,I6    I6,I7
+# image_7    I7,I1    I7,I2    I7,I3    I7,I4    I7,I5    I7,I6    I7,I7
+
+Image here represents an image file ( png ) converted to text.
