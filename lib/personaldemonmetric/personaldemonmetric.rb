@@ -1,0 +1,209 @@
+## Here player autonomy is based on how much the protagonist succumbs to their inner darkness.
+## With how damaging fully automatic protagonist is depending on how much player tracked enemy behaviours.
+
+#############################################################################################
+# Decreases or increases beserker status for player.                                        #
+#############################################################################################
+# Punishing the player for bad deeds,
+def increase_player_pdm
+  pdm = File.read("lib/data/user/personal_demon_metric.txt").strip.to_i
+
+  File.open("lib/data/user/personal_demon_metric.txt", "w") { |f|
+    pdm = pdm + 5
+
+    f.puts pdm
+  }
+end
+
+# Rewards the player for good deeds.
+def decrease_player_pdm
+  pdm = File.read("lib/data/user/personal_demon_metric.txt").strip.to_i
+
+  File.open("lib/data/user/personal_demon_metric.txt", "w") { |f|
+    pdm = pdm - 5
+
+    f.puts pdm
+  }
+end
+
+#############################################################################################
+# Determines how devestating fully automated player is for the enemy, based on how much
+# the player has learned about the enemy over time.
+#############################################################################################
+#def observe_enemy
+#  enemy_actions = File.readlines("lib/data/ai/enemy_actions.txt")
+#  total_actions = enemy_actions.size.to_i
+#
+#  chosen_action = File.read("lib/data/ai/chosen_action.txt").strip.to_i
+#
+#  total_actions.times do
+#    possible_enemy_actions  = File.readlines("lib/data/ai/possible_ai_actions.txt")
+#    possible_enemy_actions  = possible_enemy_actions.shuffle
+#    current_enemy_action = possible_enemy_actions.sample.to_s
+#
+#    if enemy_actions[chosen_action] == current_enemy_action
+#      File.open("lib/data/ai/observed_enemy_actions.txt", "a") { |f|
+#        f.puts player_actions[chosen_action]
+#      }
+#
+#      puts ">> The player retained enemy behaviour patterns in longterm memory."
+#
+#      abort
+#    else
+#      puts ">> The player has guessed player behaviours incorrectly."
+#    end
+#
+#    sleep(1.5)
+#  end
+#end
+#
+#def guess_enemy_movement
+#  enemy_actions = File.readlines("lib/data/ai/enemy_actions.txt")
+#  total_actions = enemy_actions.size.to_i
+#
+#  chosen_action = File.read("liv/data/ai/chosen_action.txt").strip.to_i
+#
+#  total_actions.times do
+#    observed_enemy_behaviours = File.readlines("lib/data/ai/observed_enemy_actions.txt")
+#    observed_enemy_behaviours = observed_enemy_behaviours.shuffle
+#    current_enemy_action      = observed_enemy_behaviours.sample.to_s
+#
+#    if enemy_actions[chosen_action] == current_ememy_action
+#      File.open("lib/data/user/enemy_patterns/observed_player_actions.txt", "a") { |f|
+#        f.puts player_actions[chosen_action]
+#      }
+#
+#      puts ">> The player in beserker status countered the enemies behaviour based on previous interactions."
+#
+#      abort
+#    else
+#      puts ">> The player in beserker made has chosen incorrectly."
+#    end
+#
+#    sleep(1.5)
+#  end
+#end
+
+#############################################################################################
+# AI with player observation and educated guesses.
+#############################################################################################
+#def observe_player
+#  player_actions = File.readlines("lib/data/user/player_actions.txt")
+#  total_actions = player_actions.size.to_i
+#
+#  automated_enemy_choice = 0
+#
+#  chosen_action = File.read("lib/data/user/chosen_action.txt").strip.to_i
+#
+#  total_actions.times do
+#    possible_player_actions  = File.readlines("lib/data/user/possible_player_actions.txt")
+#    possible_player_actions  = possible_enemy_actions.shuffle
+#    current_player_action = possible_player_actions.sample.to_s
+#
+#    if player_actions[chosen_action] == current_player_action
+#      File.open("lib/data/ai/observed_player_actions.txt", "a") { |f|
+#        f.puts player_actions[chosen_action]
+#      }
+#
+#      puts ">> The enemy retained enemy behaviour patterns in longterm memory."
+#    else
+#      puts ">> The enemy has guessed player behaviours incorrectly."
+#    end
+#
+#    sleep(1.5)
+#  end
+#end
+#
+#def guess_player_movement
+#  player_actions = File.readlines("lib/data/user/player_actions.txt")
+#  total_actions = player_actions.size.to_i
+#
+#  chosen_action = File.read("liv/data/user/chosen_action.txt").strip.to_i
+#
+#  total_actions.times do
+#    observed_player_behaviours = File.readlines("lib/data/ai/observed_player_actions.txt")
+#    observed_player_behaviours = observed_player_behaviours.shuffle
+#    current_player_action      = observed_enemy_behaviours.sample.to_s
+#
+#    if player_actions[chosen_action] == current_player_action
+#      File.open("lib/data/ai/player_patterns/observed_player_actions.txt", "a") { |f|
+#        f.puts player_actions[chosen_action]
+#      }
+#
+#      puts ">> The enemy countered the enemies behaviour based on previous interactions."
+#
+#      abort
+#    else
+#      puts ">> The enemy made has chosen incorrectly."
+#    end
+#
+#    sleep(1.5)
+#  end
+#end
+
+#############################################################################################
+# Standard methods for player autonomy in the game.                                         #
+#############################################################################################
+#def full_player_control
+#  player_heal = $healing_rate
+#
+#  # Loop for full player control
+#
+#  # Least damaging, yet most efficient healing and other maintence.
+#
+#  observe_player
+#  observe_enemy
+#end
+#
+#def mostly_player_control
+#  player_heal = $healing_rate
+#
+#  # Loop for mostly player control
+#
+#  # More powerful than full player control, but less efficient maintanence tasks.
+#
+#  observe_player
+#  observe_enemy
+#end
+#
+#def mostly_automated_player
+#  player_heal = $healing_rate
+#
+#  # Loop for mostly automated player.
+#
+#  # The most powerful attacks for player character, but least efficient maintance tasks.
+#
+#  observe_player
+#  observe_enemy
+#end
+#
+#def fully_automated_player
+#  player_heal = $healing_rate
+#
+#  # Loop for fully automated player characters.
+#
+#  # Your attacks are more powerful, but you're not as efficient at maintanence.
+#
+#  guess_enemy_movement
+#  guess_player_movement
+#end
+
+pdm = File.read("lib/data/user/personal_demon_metric.txt").strip.to_i
+
+if pdm == 0
+  $healing_rate = 8
+
+  fully_player_control
+elsif pdm == 25
+  $healing_rate = 6
+
+  mostly_player_control
+elsif pdm == 70
+  $healing_rate = 4
+
+  mostly_automated_player
+elsif pdm == 100
+  $healing_rate = 2
+
+  fully_automated_player # With full personal demon metric meaning automated beserker like mode.
+end

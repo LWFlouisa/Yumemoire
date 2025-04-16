@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="color.css"?>
+
+<screen>
+
+  <container>
+    <title>Color PH Index</title>
+    <mission_statement>This wiki is intended for the purpose of indexing color alkalinity and acidity in a parsable format for using in adventure games under a GPL license for educational purposes.</mission_statement>
+
+    <color>
+      <color_identifier>PH6DR1</color_identifier>
+      <color_name>Maize</color_name>
+      <color_hex>#F9CF55</color_hex>
+      <color_alkalinity>This color has an almost nuetral acidity in the color acidity spectrum for colors related to Salmon Red and Dandelion.</color_alkalinity>
+      <color_relationship>This color is derived from Salmon Red and Dandelion yellow.</color_relationship>
+    </color>
+
+  </container>
+
+</screen>

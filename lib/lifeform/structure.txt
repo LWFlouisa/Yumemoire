@@ -1,0 +1,29 @@
+Well I originally started out with this plan in mind.
+~~~
+[    Scuttle Up ] [ Climb Tree ] [ Squeek ]
+[  Scuttle Down ] [  Eat Grass ] [   Hsss ]
+[  Scuttle Left ] [ Find Peers ] [  Bleet ]
+[ Scuttle Right ] [  Build Web ] [    Meh ]
+
+~~~neuromap
+        0
+  0     1     2
+0 0,0,0 0,0,1 0,0,2
+1 0,1,0 0,1,1 0,1,2
+2 0,2,0 0,2,1 0,2,2
+3 0,3,0 0,3,1 0,3,2
+
+        1
+  0     1     2
+0 1,0,0 1,0,1 1,0,2
+1 1,1,0 1,1,1 1,1,2
+2 1,2,0 1,2,1 1,2,2
+3 1,3,0 1,3,1 1,3,2
+
+        2
+  0     1     2
+0 2,0,0 2,0,1 2,0,2
+1 2,1,0 2,1,1 2,1,2
+2 2,2,0 2,2,1 2,2,2
+3 2,3,0 2,3,1 2,3,2
+~~~
