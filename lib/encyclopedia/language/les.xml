@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="conlang.css"?>
+
+<screen>
+
+  <container>
+
+    <conlang>
+      <word_name>Les</word_name>
+      <word_type>Word Class [ Francophonic ]</word_type>
+      <word_definition>The plural word class in the French language for either gendered noun.</word_definition>
+      <word_context>Words with a plural word in French use les as the proper classification.</word_context>
+    </conlang>
+
+  </container>
+
+</screen>

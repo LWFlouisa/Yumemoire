@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="color.css"?>
+
+<screen>
+
+  <container>
+
+    <title>Color PH Index</title>
+    <mission_statement>This wiki is intended for the purpose of indexing color alkalinity and acidity in a parsable format for using in adventure games under a GPL license for educational purposes.</mission_statement>
+
+    <color>
+      <color_identifier>PH4DR1</color_identifier>
+      <color_name>Salmon</color_name>
+      <color_hex>#FC746B</color_hex>
+      <color_alkalinity>This color has the highest level of acidity in the color acidity spectrum for colors related to Salmon Red.</color_alkalinity>
+      <color_relationship>This color is derived from Salmon red and Fire Engine Red.</color_relationship>
+    </color>
+
+  </container>
+
+</screen>

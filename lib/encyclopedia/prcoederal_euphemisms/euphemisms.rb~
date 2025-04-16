@@ -1,0 +1,39 @@
+french_noun_list     = File.readlines("lib/data/words/french_noun_list.txt").shuffle
+
+# French Noun List
+# De le pomme
+# De le banane
+# De le pommme de terre
+
+hybrid_compound_list = File.readlines("lib/data/words/hybrid_compound_list.txt".shuffle
+
+# Hybrid Compound List
+# Te daidakorolavu        - Man's first time bath.
+# Ta daidakorolava        - Woman's first time bath.
+# Deso daidakorolavos     - Couple's first time bath.
+# Te shadodoru            - Man's Brown slope.   Ed
+# Ta shadodora            - Woman's brown slope.
+# Deso shadodoros         - Couple's brown slope.
+# Te ribingurumuguachu    - Man in living room painting with gouache.
+# Ta ribingurumuguacha    - Woman in living room painting with gouache.
+# Deso ribingurumuguachos - Couple in living room painting with gouache.
+# Te shinkupratiqueu      - Man at sink dispensery.
+# Ta shinkupratiquea      - Woman at sink dispensery.
+# Deso shinkupratiqueos   - Couple at sink dispensery.
+# Te basurumumerdu        - Man's bathroom shit. Men's toilet
+# Ta basurumumerda        - Woman's bathroom shit. Woman's toilet
+# Deso basurumumerdos     - Couple's bathroomshit. Couple's toilet
+# Te basurumucanapu       - Man's bathroom couch.
+# Ta basurumucanapa       - Woman's bathroom couch.
+# Deso basurumucanapos    - Couple's bathroom couch.
+# Te garejisortiu         - Men's garage exit.
+# Ta garejisortia         - Women's garage exit.
+# Deso garejisortios      - Couple's garage exit.
+
+init_vector = File.read("lib/data/npc/input.txt").strip.to_i
+
+current_french_noun     = french_noun_list[init_vector]
+current_hybrid_compound = hybrid_compound_list[init_vector]
+
+current_phrase     = "Context 1: #{current_hybrid_compound} #{current_french_noun}"
+alt_current_phrase = "Context 2: #{current_french_noun} #{current_hybrid_compound}"

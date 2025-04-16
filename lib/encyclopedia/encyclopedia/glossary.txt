@@ -1,0 +1,33 @@
+## Standard Game Terms
+The color system wont be relevant until tiles version.
+
+[ Lunario ] [ Lunar Phases ]
+[ Franc   ] [ RPS ]
+[ Yen     ]
+
+## Ahuzacos Dialect
+Ahuzacos mostly follows standard French grammar, except in these specific situations:
+
+[ Je, Watashi ]          | [ Le Pere,    Anu Chichioya ]      | [ La Nagasaki De France ] 
+[ Moi, Jibun ]           | [ La Mere,    Ana Hahaoya ]        | [ Atarashi Lune ]
+[ Tu, Anata ]            | [ Le Souer,   Ana Suppai ]         | [ Nouvelle Tsuki ]
+[ Vous, Anata Tachi ]    | [ La Frere,   Ana Koyodai ]        | [ Le, Anu ]
+[ Nous, Watashitachiha ] | [ Le Cousin,  Anu Itoko ]          | [ La, Ana ]
+[ Il, Kare ]             | [ La Cousine, Ana On'na No Itoko ] | [ Les, Anos ]
+[ Ils, Kare Wa ]         | [ Le Oncle,   Anu Oji ]            |
+[ Elle, Kanojo ]         | [ La Tante,   Ana Oba ]            |
+[ Elles, Kanojo ]        | [ Bijutsu Politique ]              |
+
+## Directions
+[ Nord       ] | [ Ouest      ] | [ Nord Ouest ] | [ Dehors     ] | [ Ouest Dedans  ] | [ Sud Dedans  ]
+[ Sud        ] | [ Nord Est   ] | [ Sud Ouest  ] | [ Est Dedans ] | [ Ouest Dehours ] | [ Nord Dehors ]
+[ Est        ] | [ Sud Est    ] | [ Dedans     ] | [ Est Dehors ] | [ Nord Dedans   ] | [ Sud Dehors  ]
+
+## Story Specific
+Tombakashi - Les Catabombs De Ceramqiue Dijitaru - Wasei-Eigo of "Tombeau De
+Okaeshi", a tomb for returnining favor to undead kings. When an Ursinehomme
+dies, the ground beneath them distorts into a treachorous obstacle course,
+with the spirits of dead Bear-Men surving as barriers to ransacking the
+comrade's corpse. Such creatures are often cybernetically enhanced,
+such defenders often chosen from comrades whom had previously died in
+battle.

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="color.css"?>
+
+<screen>
+  <container>
+    <title>Color PH Index</title>
+    <mission_statement>This wiki is intended for the purpose of indexing color alkalinity and acidity in a parsable format for using in adventure games under a GPL license for educational purposes.</mission_statement>
+
+    <color>
+      <color_identifier>PH8WE1</color_identifier>
+      <color_name>Japanese Bistre</color_name>
+      <color_hex>#65482C</color_hex>
+      <color_alkalinity>The color has the lowest level of alkalinity in the family of level eight alkalines in the color acidity spectrum for colors related to blush.</color_alkalinity>
+      <color_relationship>This color is derived from blush red and jungle green.</color_relationship>
+    </color>
+
+  </container>
+
+</screen>

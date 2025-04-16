@@ -1,0 +1,32 @@
+# Telephone Game Predictor
+# Given X equals a word list showing a game of telephone played on a noun set, predict the forms at each stage of the process what Y becomes. With X and Y being two different word lists, and Z being an initialization vector.
+
+# Lists must be of same amount of items.
+english_animal_list = File.readlines("lib/data/words/word_lists/english_animal_list.txt")
+french_animal_list  = File.readlines("lib/data/words/word_lists/french_animal_list.txt")
+
+init_vector = File.read("lib/data/npc/input.txt").strip.to_i
+
+loop do
+  current_en_animal   = english_animal_list[init_vector]
+  current_fr_animal   = french_animal_list[init_vector]
+
+  if current_en_animal == english_animal_list.last
+    puts "Reached the end of the drifting cycle..."
+  else
+    print current_en_animal
+    print "; "
+  end
+
+  if current_fr_animal == french_animal_list.last
+    puts "Reached the end of the drifting cycle..."
+  else
+    puts current_fr_animal
+  end
+
+  File.open("lib/data/npc/input.txt", "w") { |f|
+    init_vector = init_vector + 1
+
+    puts init_vector
+  }
+end
